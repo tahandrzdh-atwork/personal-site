@@ -1,22 +1,31 @@
-# Bilingual Editorial Personal Website Template (FA / EN)
+# Bilingual Editorial Personal Website & SEO Article Publishing Template (FA / EN)
 
-A single-page, bilingual (**Persian RTL** & **English LTR**) personal portfolio and advisory website template built with vanilla **HTML, CSS, and JavaScript** — zero frameworks or build tools required.
+A single-page, bilingual (**Persian RTL** & **English LTR**) personal portfolio and advisory website template with an integrated **SEO-Optimized Article Publishing Suite** built with vanilla **HTML5, CSS3, and JavaScript** — zero build tools or dependencies required.
 
 ## Features
 
-- **Editorial High-Contrast Design**: Alternating warm cream (`#FAF3EB`) and ink black (`#070707`) bands with coral (`#E4645C`) horizontal rules and vertical accent lines.
-- **Instant FA / EN Language Switcher**: Toggles `<html lang>` and `dir` (`rtl` ↔ `ltr`), persists user preference in `localStorage`, and announces state updates cleanly for screen readers.
-- **CSS Logical Properties & Modern Architecture**: Uses `@layer`, CSS custom properties, `inline-size` / `margin-inline` / `border-inline-start`, fluid `clamp()` typography, and `prefers-reduced-motion`.
-- **Interactive Stage-to-Form Flow**: Clicking any stage CTA pre-selects the matching stage in the contact form and smoothly scrolls to it, with accessible inline validation.
-- **Ready for GitHub Pages**: Pure static files (`index.html`, `styles.css`, `script.js`, `assets/`).
+- **Editorial High-Contrast Design**: Alternating warm cream (`#FAF3EB`) and ink black (`#070707`) surfaces with coral (`#E4645C`) architectural dividers.
+- **Instant FA / EN Language Switcher**: Toggles `<html lang>` and `dir` (`rtl` ↔ `ltr`) seamlessly across homepage and article pages, saved in `localStorage`.
+- **Integrated Article & SEO Studio (`article.html`)**:
+  - **Article Title & H1 Hierarchy**: Semantic heading tags with natural query styling.
+  - **Answer Nugget / TL;DR**: 40–80 word direct answer blocks optimized for Generative Engine Optimization (**GEO 2026** / ChatGPT / Perplexity / Gemini).
+  - **Responsive Comparison Data Table**: Styled with `<caption>`, accessible table headers (`scope="col"` / `scope="row"`), and horizontal scroll container.
+  - **Semantic Linking**: Stylized internal links (`link-internal`) and secure outbound citations (`link-external` with `rel="noopener noreferrer"`).
+  - **Google SERP Snippet Preview**: Real-time interactive simulation of desktop & mobile Google search result snippets (URL breadcrumb, blue title link, description with highlighted keywords).
+  - **Live Rank Math-style SEO Scorecard (0–100)**: Real-time checks for focus keyword in title, meta description length (130–158 chars), title length (<60 chars), lead density, tables, links, and schema.
+  - **Structured Data / Schema.org**: Ready-to-index JSON-LD for `Article`, `BreadcrumbList`, and `FAQPage`.
+  - **Import / Export**: Upload articles via JSON or export clean SEO JSON and self-contained HTML.
+- **Interactive Stage-to-Form Flow**: Smooth scroll and automatic stage pre-selection in contact form with inline accessible validation.
+- **Ready for GitHub Pages**: 100% static files.
 
 ## Project Structure
 
 ```text
-├── index.html
-├── styles.css
-├── script.js
-├── assets/
+├── index.html              # Homepage with 6 collaboration stages, portfolio & article teaser
+├── article.html            # Production SEO article template + Interactive SEO Studio Drawer
+├── styles.css              # Modern CSS layout with @layer, CSS tokens, responsive tables & dark theme
+├── script.js               # Bilingual i18n dictionary, live SEO analyzer & SERP simulator
+├── assets/                 # Editorial & geometric placeholder visuals
 │   ├── placeholder-hero.jpg
 │   ├── placeholder-cta.jpg
 │   ├── placeholder-1.svg
@@ -26,12 +35,19 @@ A single-page, bilingual (**Persian RTL** & **English LTR**) personal portfolio 
 └── README.md
 ```
 
-## Customization
+## How to Publish & Optimize an Article
 
-1. Replace the placeholder copy inside `index.html` and the `TRANSLATIONS` object in `script.js` (`fa` and `en` keys).
-2. Replace `assets/placeholder-*` files with your own portraits or editorial visuals.
-3. Update `hello@example.com`, `https://example.com`, and social links in `index.html`.
-4. Connect `#contact-form` in `script.js` to your backend endpoint or form service (e.g., Formspree).
+1. Open `article.html` in any modern browser.
+2. Click **⚡ استودیو سئو و بارگذاری مقاله** (or **SEO & Article Studio** in English).
+3. Enter your:
+   - **عنوان مقاله (Article Title)** & **پیوند یکتا (Slug)**
+   - **کلمه کلیدی اصلی (Focus Keyword)** & کلمات فرعی (LSI)
+   - **عنوان اسنیپت (Snippet Title)** — keep it under 60 characters
+   - **توضیحات اسنیپت (Meta Description)** — keep it between 130 and 158 characters
+   - **متن لید، جدول و لینک‌ها**
+4. Observe the live **Google SERP Snippet Preview** and **Rank Math SEO Score**.
+5. Click **✓ اعمال زنده روی مقاله** to see your article instantly formatted and its JSON-LD schema generated.
+6. Click **📄 استخراج کد کامل HTML مقاله** or **📥 استخراج داده‌های سئو (JSON)** to save or publish.
 
 ## License
 
