@@ -15,6 +15,12 @@
   <script src="script.js" defer></script>
 </head>
 <body>
+  <!-- Live Edit Active Top Banner -->
+  <aside class="live-edit-banner" id="live-edit-banner" role="status" aria-live="polite">
+    <span class="live-edit-banner-text" data-i18n="adminLiveBanner">✏️ حالت ویرایش زنده فعال است: روی هر متنی از صفحه کلیک کنید و مستقیماً تایپ نمایید.</span>
+    <button type="button" class="live-edit-banner-btn" id="btn-exit-live-edit" data-i18n="adminExitLive">خروج از ویرایش زنده</button>
+  </aside>
+
   <a href="#main-heading" class="skip-link visually-hidden" data-i18n="skipLink">پرش به محتوای اصلی</a>
 
   <div class="sr-only" aria-live="polite" id="live-announcer"></div>
@@ -597,5 +603,331 @@
       <p class="copyright-text" data-i18n="copyright">© ۲۰۲۶ نام شما. تمامی حقوق محفوظ است.</p>
     </div>
   </footer>
+
+  <!-- Admin Toast Notification -->
+  <div class="admin-toast" id="admin-toast" role="status" aria-live="polite"></div>
+
+  <!-- Admin Floating Dock -->
+  <div class="admin-dock-container" id="admin-dock-container">
+    <button type="button" class="admin-pill-btn" id="admin-pill-btn" aria-label="باز کردن پنل مدیریت (میانبر Ctrl+Shift+E)">
+      <span aria-hidden="true">⚙️</span>
+      <span data-i18n="adminPillTitle">پنل مدیریت و ویرایشگر</span>
+    </button>
+
+    <div class="admin-dock-bar" id="admin-dock-bar" role="toolbar" aria-label="نوار ابزار مدیریت سایت">
+      <span class="admin-dock-title">
+        <span aria-hidden="true">🛠️</span>
+        <span data-i18n="adminDockTitle">ادمین</span>
+      </span>
+
+      <button type="button" class="admin-dock-btn" id="btn-dock-live-edit" title="ویرایش مستقیم متون روی صفحه">
+        <span aria-hidden="true">✏️</span>
+        <span data-i18n="adminBtnLive">ویرایش مستقیم</span>
+      </button>
+
+      <button type="button" class="admin-dock-btn" id="btn-dock-open-drawer" title="کاستومایزر کامل رنگ‌ها، متون و تصاویر">
+        <span aria-hidden="true">🎨</span>
+        <span data-i18n="adminBtnCustomize">کاستومایزر</span>
+      </button>
+
+      <button type="button" class="admin-dock-btn" id="btn-dock-save" title="ذخیره تغییرات در حافظه مرورگر">
+        <span aria-hidden="true">💾</span>
+        <span data-i18n="adminBtnSave">ذخیره</span>
+      </button>
+
+      <button type="button" class="admin-dock-btn" id="btn-dock-export-html" title="دانلود فایل کامل HTML آماده انتشار">
+        <span aria-hidden="true">📥</span>
+        <span data-i18n="adminBtnExportHtml">دانلود HTML</span>
+      </button>
+
+      <button type="button" class="admin-dock-btn" id="btn-dock-reset" title="بازنشانی به حالت پیش‌فرض">
+        <span aria-hidden="true">🔄</span>
+        <span data-i18n="adminBtnReset">بازنشانی</span>
+      </button>
+
+      <button type="button" class="admin-dock-close" id="btn-dock-minimize" aria-label="کوچک کردن نوار ادمین">
+        ✕
+      </button>
+    </div>
+  </div>
+
+  <!-- Admin Customizer Drawer Dialog -->
+  <dialog id="admin-customizer-drawer" class="admin-customizer-drawer surface-ink" aria-labelledby="customizer-heading">
+    <div class="customizer-header">
+      <div class="customizer-title-wrap">
+        <h2 id="customizer-heading" class="customizer-title" data-i18n="customizerHeaderTitle">🎨 مدیریت و کاستومایزر صفحات</h2>
+        <p class="customizer-subtitle" data-i18n="customizerHeaderSub">تغییر زنده رنگ‌ها، متون، لینک‌ها و تصاویر بدون کدنویسی</p>
+      </div>
+      <button type="button" class="customizer-close-btn" id="btn-close-admin-drawer" aria-label="بستن کاستومایزر">✕</button>
+    </div>
+
+    <!-- Navigation Tabs -->
+    <nav class="customizer-tabs-nav" role="tablist" aria-label="تب‌های کاستومایزر">
+      <button type="button" role="tab" class="customizer-tab-btn is-active" id="tab-theme" aria-selected="true" aria-controls="panel-theme" data-i18n="tabTheme">🎨 رنگ و تم</button>
+      <button type="button" role="tab" class="customizer-tab-btn" id="tab-hero" aria-selected="false" aria-controls="panel-hero" data-i18n="tabHero">👤 هیرو و برند</button>
+      <button type="button" role="tab" class="customizer-tab-btn" id="tab-stages" aria-selected="false" aria-controls="panel-stages" data-i18n="tabStages">🧭 ۶ مرحله</button>
+      <button type="button" role="tab" class="customizer-tab-btn" id="tab-showcase" aria-selected="false" aria-controls="panel-showcase" data-i18n="tabShowcase">💼 نمونه‌کار و رابین</button>
+      <button type="button" role="tab" class="customizer-tab-btn" id="tab-brands" aria-selected="false" aria-controls="panel-brands" data-i18n="tabBrands">🤝 برندها</button>
+      <button type="button" role="tab" class="customizer-tab-btn" id="tab-footer" aria-selected="false" aria-controls="panel-footer" data-i18n="tabFooter">📬 فوتر و تماس</button>
+      <button type="button" role="tab" class="customizer-tab-btn" id="tab-data" aria-selected="false" aria-controls="panel-data" data-i18n="tabData">💾 خروجی و فایل</button>
+    </nav>
+
+    <!-- Drawer Body -->
+    <div class="customizer-body">
+      <!-- 1. Theme Panel -->
+      <div role="tabpanel" id="panel-theme" class="customizer-tab-panel is-active" aria-labelledby="tab-theme">
+        <div class="customizer-section-card">
+          <h3 class="customizer-section-title" data-i18n="themeAccentHeading">رنگ اصلی و شاخص (Accent Color)</h3>
+          <div class="customizer-field">
+            <label for="admin-color-picker" class="customizer-label" data-i18n="themeAccentLabel">انتخاب رنگ شاخص اختصاصی:</label>
+            <div style="display: flex; align-items: center; gap: 0.75rem;">
+              <input type="color" id="admin-color-picker" value="#E4645C" style="inline-size: 3rem; block-size: 2.2rem; border: none; cursor: pointer; border-radius: 4px; background: transparent;">
+              <span id="admin-color-value" style="font-family: monospace; font-size: 0.95rem; color: var(--color-coral); font-weight: 700;">#E4645C</span>
+            </div>
+            <div class="color-presets-row" aria-label="پالت رنگ‌های آماده">
+              <button type="button" class="color-preset-chip is-selected" data-color="#E4645C" style="background-color: #E4645C;" title="Coral"></button>
+              <button type="button" class="color-preset-chip" data-color="#E11D48" style="background-color: #E11D48;" title="Crimson"></button>
+              <button type="button" class="color-preset-chip" data-color="#D97706" style="background-color: #D97706;" title="Amber"></button>
+              <button type="button" class="color-preset-chip" data-color="#059669" style="background-color: #059669;" title="Emerald"></button>
+              <button type="button" class="color-preset-chip" data-color="#2563EB" style="background-color: #2563EB;" title="Cobalt"></button>
+              <button type="button" class="color-preset-chip" data-color="#7C3AED" style="background-color: #7C3AED;" title="Royal Purple"></button>
+              <button type="button" class="color-preset-chip" data-color="#475569" style="background-color: #475569;" title="Slate"></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="customizer-section-card">
+          <h3 class="customizer-section-title" data-i18n="themeBgHeading">تم پس‌زمینه و حالت نمایش</h3>
+          <div class="customizer-field">
+            <label for="admin-theme-bg" class="customizer-label" data-i18n="themeBgLabel">نوع زمینه:</label>
+            <select id="admin-theme-bg" class="customizer-select">
+              <option value="cream">کرمی تحریریه‌ای (#FAF3EB - پیش‌فرض)</option>
+              <option value="dark">تیره کربنی مدرن (#111110)</option>
+              <option value="white">سفید مینیمال (#FFFFFF)</option>
+            </select>
+          </div>
+
+          <div class="customizer-field">
+            <label for="admin-font-scale" class="customizer-label" data-i18n="themeFontScaleLabel">مقیاس فونت و قلم:</label>
+            <select id="admin-font-scale" class="customizer-select">
+              <option value="100">استاندارد (۱۰۰٪)</option>
+              <option value="106">کمی بزرگ‌تر (۱۰۶٪)</option>
+              <option value="112">بزرگ (۱۱۲٪)</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2. Hero & Brand Panel -->
+      <div role="tabpanel" id="panel-hero" class="customizer-tab-panel" aria-labelledby="tab-hero">
+        <div class="customizer-section-card">
+          <h3 class="customizer-section-title" data-i18n="heroBrandIdentityHeading">هویت و نام برند شخصی</h3>
+          <div class="customizer-field">
+            <label for="custom-brand-first" class="customizer-label" data-i18n="labelBrandFirst">نام کوچک (قلم نستعلیق/اسکریپت):</label>
+            <input type="text" id="custom-brand-first" class="customizer-input">
+          </div>
+          <div class="customizer-field">
+            <label for="custom-brand-last" class="customizer-label" data-i18n="labelBrandLast">نام خانوادگی (قلم سریف):</label>
+            <input type="text" id="custom-brand-last" class="customizer-input">
+          </div>
+        </div>
+
+        <div class="customizer-section-card">
+          <h3 class="customizer-section-title" data-i18n="heroContentHeading">متون بخش هیرو (معرفی)</h3>
+          <div class="customizer-field">
+            <label for="custom-hero-eyebrow" class="customizer-label" data-i18n="labelHeroEyebrow">عنوان فرعی بالای تیتر:</label>
+            <input type="text" id="custom-hero-eyebrow" class="customizer-input">
+          </div>
+          <div class="customizer-field">
+            <label for="custom-hero-title" class="customizer-label" data-i18n="labelHeroTitle">تیتر اصلی هیرو (H1):</label>
+            <input type="text" id="custom-hero-title" class="customizer-input">
+          </div>
+          <div class="customizer-field">
+            <label for="custom-hero-lead" class="customizer-label" data-i18n="labelHeroLead">متن لید و پاراگراف معرفی:</label>
+            <textarea id="custom-hero-lead" class="customizer-textarea" rows="3"></textarea>
+          </div>
+          <div class="customizer-field">
+            <label for="custom-hero-cta1" class="customizer-label" data-i18n="labelHeroCta1">متن دکمه اول (اصلی):</label>
+            <input type="text" id="custom-hero-cta1" class="customizer-input">
+          </div>
+          <div class="customizer-field">
+            <label for="custom-hero-cta2" class="customizer-label" data-i18n="labelHeroCta2">متن دکمه دوم (مشاهده مراحل):</label>
+            <input type="text" id="custom-hero-cta2" class="customizer-input">
+          </div>
+        </div>
+
+        <div class="customizer-section-card">
+          <h3 class="customizer-section-title" data-i18n="heroImageHeading">تصویر اصلی هیرو</h3>
+          <div class="customizer-field">
+            <label for="custom-hero-img-upload" class="customizer-label" data-i18n="labelUploadHeroImg">بارگذاری عکس جدید از کامپیوتر:</label>
+            <input type="file" id="custom-hero-img-upload" accept="image/*" class="customizer-input">
+          </div>
+          <div class="customizer-field">
+            <label for="custom-hero-img-url" class="customizer-label" data-i18n="labelHeroImgUrl">یا نشانی اینترنتی (URL) تصویر:</label>
+            <input type="text" id="custom-hero-img-url" class="customizer-input" placeholder="assets/placeholder-hero.jpg">
+          </div>
+        </div>
+      </div>
+
+      <!-- 3. Stages Panel -->
+      <div role="tabpanel" id="panel-stages" class="customizer-tab-panel" aria-labelledby="tab-stages">
+        <div class="customizer-section-card">
+          <h3 class="customizer-section-title" data-i18n="stagesSelectHeading">انتخاب و ویرایش مراحل همکاری</h3>
+          <div class="customizer-field">
+            <label for="custom-stage-selector" class="customizer-label" data-i18n="labelSelectStage">انتخاب مرحله برای ویرایش:</label>
+            <select id="custom-stage-selector" class="customizer-select">
+              <option value="1">مرحله ۱ (ابهام اولیه)</option>
+              <option value="2">مرحله ۲ (شروع و استراتژی)</option>
+              <option value="3">مرحله ۳ (هویت و ساخت از صفر)</option>
+              <option value="4">مرحله ۴ (اجرا و کیفیت)</option>
+              <option value="5">مرحله ۵ (بازنگری و گیر مسیر)</option>
+              <option value="6">مرحله ۶ (مشاوره و شفافیت)</option>
+            </select>
+          </div>
+
+          <div class="customizer-field">
+            <label for="custom-stage-strip" class="customizer-label" data-i18n="labelStageStrip">عنوان خلاصه در نوار مشکی:</label>
+            <input type="text" id="custom-stage-strip" class="customizer-input">
+          </div>
+          <div class="customizer-field">
+            <label for="custom-stage-title" class="customizer-label" data-i18n="labelStageTitle">عنوان کامل مرحله:</label>
+            <input type="text" id="custom-stage-title" class="customizer-input">
+          </div>
+          <div class="customizer-field">
+            <label for="custom-stage-body" class="customizer-label" data-i18n="labelStageBody">توضیحات و متن تفصیلی مرحله:</label>
+            <textarea id="custom-stage-body" class="customizer-textarea" rows="4"></textarea>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4. Showcase Panel -->
+      <div role="tabpanel" id="panel-showcase" class="customizer-tab-panel" aria-labelledby="tab-showcase">
+        <div class="customizer-section-card">
+          <h3 class="customizer-section-title" data-i18n="showcaseSectionHeading">بخش نمونه‌کار و رابین</h3>
+          <div class="customizer-field">
+            <label for="custom-showcase-heading" class="customizer-label" data-i18n="labelShowcaseHeading">تیتر بخش:</label>
+            <input type="text" id="custom-showcase-heading" class="customizer-input">
+          </div>
+          <div class="customizer-field">
+            <label for="custom-manifesto-1" class="customizer-label" data-i18n="labelManifesto1">متن بیانیه (پاراگراف ۱):</label>
+            <textarea id="custom-manifesto-1" class="customizer-textarea" rows="2"></textarea>
+          </div>
+          <div class="customizer-field">
+            <label for="custom-manifesto-2" class="customizer-label" data-i18n="labelManifesto2">متن بیانیه (پاراگراف ۲):</label>
+            <textarea id="custom-manifesto-2" class="customizer-textarea" rows="2"></textarea>
+          </div>
+          <div class="customizer-field">
+            <label for="custom-proof-text" class="customizer-label" data-i18n="labelProofText">متن جعبه اثبات و نتایج:</label>
+            <textarea id="custom-proof-text" class="customizer-textarea" rows="2"></textarea>
+          </div>
+          <div class="customizer-field">
+            <label for="custom-showcase-url" class="customizer-label" data-i18n="labelShowcaseUrl">لینک دکمه نمونه‌کار (وب‌سایت رابین):</label>
+            <input type="url" id="custom-showcase-url" class="customizer-input">
+          </div>
+          <div class="customizer-field">
+            <label for="custom-showcase-btn" class="customizer-label" data-i18n="labelShowcaseBtn">متن روی دکمه نمونه‌کار:</label>
+            <input type="text" id="custom-showcase-btn" class="customizer-input">
+          </div>
+        </div>
+      </div>
+
+      <!-- 5. Brands Panel -->
+      <div role="tabpanel" id="panel-brands" class="customizer-tab-panel" aria-labelledby="tab-brands">
+        <div class="customizer-section-card">
+          <h3 class="customizer-section-title" data-i18n="brandsSectionHeading">برندهای همکار</h3>
+          <div class="customizer-field">
+            <label for="custom-brands-title" class="customizer-label" data-i18n="labelBrandsTitle">تیتر بخش برندها:</label>
+            <input type="text" id="custom-brands-title" class="customizer-input">
+          </div>
+          <div class="customizer-field">
+            <label for="custom-brand1-name" class="customizer-label">برند ۱ (نام و تگ):</label>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem;">
+              <input type="text" id="custom-brand1-name" class="customizer-input" placeholder="نام برند">
+              <input type="text" id="custom-brand1-tag" class="customizer-input" placeholder="توضیح / زمینه">
+            </div>
+          </div>
+          <div class="customizer-field">
+            <label for="custom-brand2-name" class="customizer-label">برند ۲ (نام و تگ):</label>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem;">
+              <input type="text" id="custom-brand2-name" class="customizer-input" placeholder="نام برند">
+              <input type="text" id="custom-brand2-tag" class="customizer-input" placeholder="توضیح / زمینه">
+            </div>
+          </div>
+          <div class="customizer-field">
+            <label for="custom-brand3-name" class="customizer-label">برند ۳ (نام و تگ):</label>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem;">
+              <input type="text" id="custom-brand3-name" class="customizer-input" placeholder="نام برند">
+              <input type="text" id="custom-brand3-tag" class="customizer-input" placeholder="توضیح / زمینه">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6. Footer Panel -->
+      <div role="tabpanel" id="panel-footer" class="customizer-tab-panel" aria-labelledby="tab-footer">
+        <div class="customizer-section-card">
+          <h3 class="customizer-section-title" data-i18n="footerSectionHeading">تماس، ایمیل و فوتر</h3>
+          <div class="customizer-field">
+            <label for="custom-contact-title" class="customizer-label" data-i18n="labelContactTitle">تیتر بخش تماس:</label>
+            <input type="text" id="custom-contact-title" class="customizer-input">
+          </div>
+          <div class="customizer-field">
+            <label for="custom-contact-email" class="customizer-label" data-i18n="labelContactEmail">آدرس ایمیل نمایش داده شده:</label>
+            <input type="email" id="custom-contact-email" class="customizer-input">
+          </div>
+          <div class="customizer-field">
+            <label for="custom-contact-ps" class="customizer-label" data-i18n="labelContactPs">یادداشت پی‌نوشت (PS):</label>
+            <textarea id="custom-contact-ps" class="customizer-textarea" rows="2"></textarea>
+          </div>
+          <div class="customizer-field">
+            <label for="custom-bottom-cta-title" class="customizer-label" data-i18n="labelBottomCtaTitle">تیتر بخش پایانی صفحه:</label>
+            <input type="text" id="custom-bottom-cta-title" class="customizer-input">
+          </div>
+          <div class="customizer-field">
+            <label for="custom-copyright" class="customizer-label" data-i18n="labelCopyright">متن کپی‌رایت:</label>
+            <input type="text" id="custom-copyright" class="customizer-input">
+          </div>
+        </div>
+      </div>
+
+      <!-- 7. Data & Export Panel -->
+      <div role="tabpanel" id="panel-data" class="customizer-tab-panel" aria-labelledby="tab-data">
+        <div class="customizer-section-card">
+          <h3 class="customizer-section-title" data-i18n="dataExportHeading">ذخیره، پشتیبان‌گیری و خروجی</h3>
+          <p style="font-size: 0.85rem; color: var(--color-white-muted); line-height: 1.6;" data-i18n="dataExportDesc">
+            تمامی تنظیمات در حافظه مرورگر شما ذخیره می‌شوند و حتی پس از بستن و باز کردن دوباره سایت باقی می‌مانند. همچنین می‌توانید فایل کامل HTML نهایی را دانلود کرده و مستقیماً روی هاست آپلود کنید.
+          </p>
+
+          <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+            <button type="button" class="btn btn-coral" id="btn-admin-save-all" data-i18n="btnSaveAll">
+              💾 ذخیره تنظیمات در مرورگر (Save to LocalStorage)
+            </button>
+            <button type="button" class="btn btn-outline-cream" id="btn-admin-download-html" data-i18n="btnDownloadHtml">
+              📥 دانلود خروجی کامل فایل HTML صفحه
+            </button>
+            <button type="button" class="btn btn-outline-cream" id="btn-admin-export-json" data-i18n="btnExportJson">
+              📦 استخراج تنظیمات به صورت فایل JSON
+            </button>
+            <label class="btn btn-outline-cream" style="cursor: pointer; text-align: center;">
+              <span data-i18n="btnImportJson">📁 بارگذاری تنظیمات از فایل JSON</span>
+              <input type="file" id="input-import-json" accept=".json" class="visually-hidden">
+            </label>
+            <button type="button" class="btn btn-outline-ink" id="btn-admin-factory-reset" style="border-color: #ef4444; color: #f87171;" data-i18n="btnFactoryReset">
+              🔄 بازگردانی به تنظیمات کارخانه (Reset Defaults)
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Drawer Footer -->
+    <div class="customizer-footer">
+      <div class="customizer-footer-btns">
+        <button type="button" class="btn btn-coral" id="btn-apply-drawer" data-i18n="btnApplyLive">✓ اعمال زنده</button>
+        <button type="button" class="btn btn-outline-cream" id="btn-save-drawer" data-i18n="btnSaveShort">💾 ذخیره</button>
+      </div>
+      <button type="button" class="btn btn-outline-cream" id="btn-close-drawer-bottom" data-i18n="btnClose">بستن</button>
+    </div>
+  </dialog>
 </body>
 </html>

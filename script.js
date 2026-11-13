@@ -246,7 +246,74 @@
       chkKeywordLead: 'کلمه کلیدی در ۱۰٪ ابتدای متن لید آمده است',
       chkTable: 'جدول داده‌ها یا مقایسه‌ای در محتوا وجود دارد',
       chkLinks: 'لینک‌دهی داخلی و خارجی با پروتکل امنیتی دارد',
-      chkSchema: 'ساختار اسکیما JSON-LD (Article, Breadcrumb, FAQ) فعال است'
+      chkSchema: 'ساختار اسکیما JSON-LD (Article, Breadcrumb, FAQ) فعال است',
+
+      /* Admin & Customizer Suite */
+      adminPillTitle: 'پنل مدیریت و ویرایشگر',
+      adminDockTitle: 'ادمین',
+      adminBtnLive: 'ویرایش مستقیم',
+      adminBtnCustomize: 'کاستومایزر',
+      adminBtnSave: 'ذخیره',
+      adminBtnExportHtml: 'دانلود HTML',
+      adminBtnReset: 'بازنشانی',
+      adminLiveBanner: '✏️ حالت ویرایش زنده فعال است: روی هر متنی از صفحه کلیک کنید و مستقیماً تایپ نمایید.',
+      adminExitLive: 'خروج از ویرایش زنده',
+      customizerHeaderTitle: '🎨 مدیریت و کاستومایزر صفحات',
+      customizerHeaderSub: 'تغییر زنده رنگ‌ها، متون، لینک‌ها و تصاویر بدون کدنویسی',
+      tabTheme: '🎨 رنگ و تم',
+      tabHero: '👤 هیرو و برند',
+      tabStages: '🧭 ۶ مرحله',
+      tabShowcase: '💼 نمونه‌کار و رابین',
+      tabBrands: '🤝 برندها',
+      tabFooter: '📬 فوتر و تماس',
+      tabData: '💾 خروجی و فایل',
+      themeAccentHeading: 'رنگ اصلی و شاخص (Accent Color)',
+      themeAccentLabel: 'انتخاب رنگ شاخص اختصاصی:',
+      themeBgHeading: 'تم پس‌زمینه و حالت نمایش',
+      themeBgLabel: 'نوع زمینه:',
+      themeFontScaleLabel: 'مقیاس فونت و قلم:',
+      heroBrandIdentityHeading: 'هویت و نام برند شخصی',
+      labelBrandFirst: 'نام کوچک (قلم نستعلیق/اسکریپت):',
+      labelBrandLast: 'نام خانوادگی (قلم سریف):',
+      heroContentHeading: 'متون بخش هیرو (معرفی)',
+      labelHeroEyebrow: 'عنوان فرعی بالای تیتر:',
+      labelHeroTitle: 'تیتر اصلی هیرو (H1):',
+      labelHeroLead: 'متن لید و پاراگراف معرفی:',
+      labelHeroCta1: 'متن دکمه اول (اصلی):',
+      labelHeroCta2: 'متن دکمه دوم (مشاهده مراحل):',
+      heroImageHeading: 'تصویر اصلی هیرو',
+      labelUploadHeroImg: 'بارگذاری عکس جدید از کامپیوتر:',
+      labelHeroImgUrl: 'یا نشانی اینترنتی (URL) تصویر:',
+      stagesSelectHeading: 'انتخاب و ویرایش مراحل همکاری',
+      labelSelectStage: 'انتخاب مرحله برای ویرایش:',
+      labelStageStrip: 'عنوان خلاصه در نوار مشکی:',
+      labelStageTitle: 'عنوان کامل مرحله:',
+      labelStageBody: 'توضیحات و متن تفصیلی مرحله:',
+      showcaseSectionHeading: 'بخش نمونه‌کار و رابین',
+      labelShowcaseHeading: 'تیتر بخش:',
+      labelManifesto1: 'متن بیانیه (پاراگراف ۱):',
+      labelManifesto2: 'متن بیانیه (پاراگراف ۲):',
+      labelProofText: 'متن جعبه اثبات و نتایج:',
+      labelShowcaseUrl: 'لینک دکمه نمونه‌کار (وب‌سایت رابین):',
+      labelShowcaseBtn: 'متن روی دکمه نمونه‌کار:',
+      brandsSectionHeading: 'برندهای همکار',
+      labelBrandsTitle: 'تیتر بخش برندها:',
+      footerSectionHeading: 'تماس، ایمیل و فوتر',
+      labelContactTitle: 'تیتر بخش تماس:',
+      labelContactEmail: 'آدرس ایمیل نمایش داده شده:',
+      labelContactPs: 'یادداشت پی‌نوشت (PS):',
+      labelBottomCtaTitle: 'تیتر بخش پایانی صفحه:',
+      labelCopyright: 'متن کپی‌رایت:',
+      dataExportHeading: 'ذخیره، پشتیبان‌گیری و خروجی',
+      dataExportDesc: 'تمامی تنظیمات در حافظه مرورگر شما ذخیره می‌شوند و حتی پس از بستن و باز کردن دوباره سایت باقی می‌مانند. همچنین می‌توانید فایل کامل HTML نهایی را دانلود کرده و مستقیماً روی هاست آپلود کنید.',
+      btnSaveAll: '💾 ذخیره تنظیمات در مرورگر (Save to LocalStorage)',
+      btnDownloadHtml: '📥 دانلود خروجی کامل فایل HTML صفحه',
+      btnExportJson: '📦 استخراج تنظیمات به صورت فایل JSON',
+      btnImportJson: '📁 بارگذاری تنظیمات از فایل JSON',
+      btnFactoryReset: '🔄 بازگردانی به تنظیمات کارخانه (Reset Defaults)',
+      btnApplyLive: '✓ اعمال زنده',
+      btnSaveShort: '💾 ذخیره',
+      btnClose: 'بستن'
     },
     en: {
       pageTitle: 'Your Name | Bilingual Editorial Personal Template',
@@ -493,7 +560,74 @@
       chkKeywordLead: 'Focus keyword appears in first 10% of lead copy',
       chkTable: 'Structured comparison / data table is present',
       chkLinks: 'Internal and secure outbound authority links exist',
-      chkSchema: 'Valid JSON-LD schema (Article, Breadcrumbs, FAQ) active'
+      chkSchema: 'Valid JSON-LD schema (Article, Breadcrumbs, FAQ) active',
+
+      /* Admin & Customizer Suite */
+      adminPillTitle: 'Admin & Customizer',
+      adminDockTitle: 'Admin',
+      adminBtnLive: 'Live Edit',
+      adminBtnCustomize: 'Customizer',
+      adminBtnSave: 'Save',
+      adminBtnExportHtml: 'Export HTML',
+      adminBtnReset: 'Reset',
+      adminLiveBanner: '✏️ Live editing active: Click any text directly on the page to edit.',
+      adminExitLive: 'Exit Live Edit',
+      customizerHeaderTitle: '🎨 Site & Page Customizer',
+      customizerHeaderSub: 'Live customization of colors, copy, links & visuals',
+      tabTheme: '🎨 Theme & Style',
+      tabHero: '👤 Hero & Brand',
+      tabStages: '🧭 6 Stages',
+      tabShowcase: '💼 Showcase & Rabin',
+      tabBrands: '🤝 Brands',
+      tabFooter: '📬 Footer & Contact',
+      tabData: '💾 Data & Export',
+      themeAccentHeading: 'Primary Accent Color',
+      themeAccentLabel: 'Choose custom accent color:',
+      themeBgHeading: 'Background Theme & Mode',
+      themeBgLabel: 'Background tone:',
+      themeFontScaleLabel: 'Font scale:',
+      heroBrandIdentityHeading: 'Personal Brand Identity',
+      labelBrandFirst: 'First Name (Script):',
+      labelBrandLast: 'Last Name (Serif):',
+      heroContentHeading: 'Hero Section Content',
+      labelHeroEyebrow: 'Eyebrow tag:',
+      labelHeroTitle: 'Main Title (H1):',
+      labelHeroLead: 'Lead paragraph:',
+      labelHeroCta1: 'Primary CTA label:',
+      labelHeroCta2: 'Secondary CTA label:',
+      heroImageHeading: 'Hero Visual',
+      labelUploadHeroImg: 'Upload image from computer:',
+      labelHeroImgUrl: 'Or image URL:',
+      stagesSelectHeading: 'Edit Collaboration Stages',
+      labelSelectStage: 'Select stage to edit:',
+      labelStageStrip: 'Strip label:',
+      labelStageTitle: 'Stage full title:',
+      labelStageBody: 'Stage body description:',
+      showcaseSectionHeading: 'Showcase & Rabin Section',
+      labelShowcaseHeading: 'Section title:',
+      labelManifesto1: 'Manifesto paragraph 1:',
+      labelManifesto2: 'Manifesto paragraph 2:',
+      labelProofText: 'Proof box text:',
+      labelShowcaseUrl: 'Showcase button link:',
+      labelShowcaseBtn: 'Showcase button label:',
+      brandsSectionHeading: 'Partner Brands',
+      labelBrandsTitle: 'Brands section title:',
+      footerSectionHeading: 'Contact, Email & Footer',
+      labelContactTitle: 'Contact heading:',
+      labelContactEmail: 'Displayed email address:',
+      labelContactPs: 'P.S. note:',
+      labelBottomCtaTitle: 'Bottom CTA title:',
+      labelCopyright: 'Copyright text:',
+      dataExportHeading: 'Save, Backup & Export',
+      dataExportDesc: 'All customizations are saved to your browser storage and persist on reload. You can also download the complete published HTML file ready to upload to any web host.',
+      btnSaveAll: '💾 Save Settings to Browser',
+      btnDownloadHtml: '📥 Download Published HTML File',
+      btnExportJson: '📦 Export Config to JSON',
+      btnImportJson: '📁 Import Config from JSON',
+      btnFactoryReset: '🔄 Reset to Factory Defaults',
+      btnApplyLive: '✓ Apply Live',
+      btnSaveShort: '💾 Save',
+      btnClose: 'Close'
     }
   };
 
@@ -1169,6 +1303,728 @@
     blocks.forEach((block) => observer.observe(block));
   }
 
+  /* ======================================================== */
+  /* ADMIN VISUAL CUSTOMIZER & INLINE EDITOR SUITE            */
+  /* ======================================================== */
+  function initAdminCustomizer() {
+    const STORAGE_KEY = 'site_customizations_v1';
+    let isLiveEditActive = false;
+
+    let customState = {
+      theme: {
+        accentColor: '#E4645C',
+        bgTone: 'cream',
+        fontScale: '100'
+      },
+      fa: {},
+      en: {},
+      media: {
+        heroImg: '',
+        meetingImg: '',
+        ctaImg: ''
+      }
+    };
+
+    const dockContainer = document.getElementById('admin-dock-container');
+    const pillBtn = document.getElementById('admin-pill-btn');
+    const minimizeBtn = document.getElementById('btn-dock-minimize');
+    const liveEditBtn = document.getElementById('btn-dock-live-edit');
+    const exitLiveBtn = document.getElementById('btn-exit-live-edit');
+    const openDrawerBtn = document.getElementById('btn-dock-open-drawer');
+    const dockSaveBtn = document.getElementById('btn-dock-save');
+    const dockExportHtmlBtn = document.getElementById('btn-dock-export-html');
+    const dockResetBtn = document.getElementById('btn-dock-reset');
+    const drawer = document.getElementById('admin-customizer-drawer');
+    const closeDrawerBtn = document.getElementById('btn-close-admin-drawer');
+    const closeDrawerBottomBtn = document.getElementById('btn-close-drawer-bottom');
+    const applyDrawerBtn = document.getElementById('btn-apply-drawer');
+    const saveDrawerBtn = document.getElementById('btn-save-drawer');
+    const saveAllBtn = document.getElementById('btn-admin-save-all');
+    const downloadHtmlBtn = document.getElementById('btn-admin-download-html');
+    const exportJsonBtn = document.getElementById('btn-admin-export-json');
+    const importJsonInput = document.getElementById('input-import-json');
+    const factoryResetBtn = document.getElementById('btn-admin-factory-reset');
+    const toastEl = document.getElementById('admin-toast');
+
+    // Theme form controls
+    const colorPicker = document.getElementById('admin-color-picker');
+    const colorValue = document.getElementById('admin-color-value');
+    const themeBgSelect = document.getElementById('admin-theme-bg');
+    const fontScaleSelect = document.getElementById('admin-font-scale');
+    const presetChips = document.querySelectorAll('.color-preset-chip');
+
+    // Hero & Brand form controls
+    const inputBrandFirst = document.getElementById('custom-brand-first');
+    const inputBrandLast = document.getElementById('custom-brand-last');
+    const inputHeroEyebrow = document.getElementById('custom-hero-eyebrow');
+    const inputHeroTitle = document.getElementById('custom-hero-title');
+    const inputHeroLead = document.getElementById('custom-hero-lead');
+    const inputHeroCta1 = document.getElementById('custom-hero-cta1');
+    const inputHeroCta2 = document.getElementById('custom-hero-cta2');
+    const inputHeroImgUpload = document.getElementById('custom-hero-img-upload');
+    const inputHeroImgUrl = document.getElementById('custom-hero-img-url');
+
+    // Stages form controls
+    const stageSelector = document.getElementById('custom-stage-selector');
+    const inputStageStrip = document.getElementById('custom-stage-strip');
+    const inputStageTitle = document.getElementById('custom-stage-title');
+    const inputStageBody = document.getElementById('custom-stage-body');
+
+    // Showcase form controls
+    const inputShowcaseHeading = document.getElementById('custom-showcase-heading');
+    const inputManifesto1 = document.getElementById('custom-manifesto-1');
+    const inputManifesto2 = document.getElementById('custom-manifesto-2');
+    const inputProofText = document.getElementById('custom-proof-text');
+    const inputShowcaseUrl = document.getElementById('custom-showcase-url');
+    const inputShowcaseBtn = document.getElementById('custom-showcase-btn');
+
+    // Brands form controls
+    const inputBrandsTitle = document.getElementById('custom-brands-title');
+    const inputBrand1Name = document.getElementById('custom-brand1-name');
+    const inputBrand1Tag = document.getElementById('custom-brand1-tag');
+    const inputBrand2Name = document.getElementById('custom-brand2-name');
+    const inputBrand2Tag = document.getElementById('custom-brand2-tag');
+    const inputBrand3Name = document.getElementById('custom-brand3-name');
+    const inputBrand3Tag = document.getElementById('custom-brand3-tag');
+
+    // Footer form controls
+    const inputContactTitle = document.getElementById('custom-contact-title');
+    const inputContactEmail = document.getElementById('custom-contact-email');
+    const inputContactPs = document.getElementById('custom-contact-ps');
+    const inputBottomCtaTitle = document.getElementById('custom-bottom-cta-title');
+    const inputCopyright = document.getElementById('custom-copyright');
+
+    function showToast(msg) {
+      if (!toastEl) return;
+      toastEl.textContent = msg;
+      toastEl.classList.add('is-visible');
+      clearTimeout(toastEl._timer);
+      toastEl._timer = setTimeout(() => {
+        toastEl.classList.remove('is-visible');
+      }, 3500);
+    }
+
+    function applyTheme(theme) {
+      if (!theme) return;
+      if (theme.accentColor) {
+        document.documentElement.style.setProperty('--color-coral', theme.accentColor);
+        if (colorPicker) colorPicker.value = theme.accentColor;
+        if (colorValue) colorValue.textContent = theme.accentColor;
+      }
+      if (theme.bgTone === 'dark') {
+        document.documentElement.style.setProperty('--color-cream', '#181716');
+        document.documentElement.style.setProperty('--color-ink', '#FAF3EB');
+      } else if (theme.bgTone === 'white') {
+        document.documentElement.style.setProperty('--color-cream', '#FFFFFF');
+      } else {
+        document.documentElement.style.setProperty('--color-cream', '#FAF3EB');
+        document.documentElement.style.setProperty('--color-ink', '#070707');
+      }
+      if (themeBgSelect) themeBgSelect.value = theme.bgTone || 'cream';
+
+      if (theme.fontScale) {
+        document.documentElement.style.fontSize = `${theme.fontScale}%`;
+        if (fontScaleSelect) fontScaleSelect.value = theme.fontScale;
+      }
+    }
+
+    function applyMedia(media) {
+      if (!media) return;
+      if (media.heroImg) {
+        document.querySelectorAll('.hero-image').forEach((img) => {
+          img.src = media.heroImg;
+        });
+        if (inputHeroImgUrl) inputHeroImgUrl.value = media.heroImg;
+      }
+      if (media.meetingImg) {
+        document.querySelectorAll('.portfolio-meeting-img, .author-avatar-img').forEach((img) => {
+          img.src = media.meetingImg;
+        });
+      }
+      if (media.ctaImg) {
+        document.querySelectorAll('.bottom-cta-image').forEach((img) => {
+          img.src = media.ctaImg;
+        });
+      }
+    }
+
+    function loadSavedCustomizations() {
+      try {
+        const raw = localStorage.getItem(STORAGE_KEY);
+        if (!raw) return;
+        const parsed = JSON.parse(raw);
+        if (parsed.theme) Object.assign(customState.theme, parsed.theme);
+        if (parsed.media) Object.assign(customState.media, parsed.media);
+        if (parsed.fa) {
+          Object.assign(customState.fa, parsed.fa);
+          Object.assign(TRANSLATIONS.fa, parsed.fa);
+        }
+        if (parsed.en) {
+          Object.assign(customState.en, parsed.en);
+          Object.assign(TRANSLATIONS.en, parsed.en);
+        }
+
+        applyTheme(customState.theme);
+        applyMedia(customState.media);
+        applyLanguage(currentLang);
+      } catch (e) {
+        console.warn('Error loading customizer state:', e);
+      }
+    }
+
+    function saveCustomizations(notify = true) {
+      try {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(customState));
+        if (notify) {
+          const msg = currentLang === 'fa'
+            ? '✓ تمام تغییرات با موفقیت در مرورگر ذخیره شد.'
+            : '✓ All customizations saved to browser storage.';
+          showToast(msg);
+        }
+      } catch (e) {
+        console.error('Failed to save customizations:', e);
+      }
+    }
+
+    function toggleLiveEdit(forced) {
+      isLiveEditActive = typeof forced === 'boolean' ? forced : !isLiveEditActive;
+      document.body.classList.toggle('is-admin-editing', isLiveEditActive);
+
+      if (liveEditBtn) {
+        liveEditBtn.classList.toggle('is-active', isLiveEditActive);
+      }
+
+      // Toggle contenteditable on editable text targets
+      const editables = document.querySelectorAll(
+        '[data-i18n], .hero-title, .hero-lead, .stage-heading, .stage-body, .portfolio-heading, .brand-item-name, .contact-ps, .bottom-cta-title'
+      );
+      editables.forEach((el) => {
+        if (isLiveEditActive) {
+          el.setAttribute('contenteditable', 'true');
+          el.setAttribute('data-editable', 'true');
+        } else {
+          el.removeAttribute('contenteditable');
+          el.removeAttribute('data-editable');
+        }
+      });
+
+      const msg = isLiveEditActive
+        ? (currentLang === 'fa'
+            ? '✓ حالت ویرایش مستقیم فعال شد. روی هر متنی کلیک کنید و مستقیماً تایپ نمایید.'
+            : '✓ Live edit enabled. Click and type directly on any text.')
+        : (currentLang === 'fa'
+            ? '✓ حالت ویرایش مستقیم غیرفعال شد.'
+            : '✓ Live edit disabled.');
+      showToast(msg);
+    }
+
+    // Populate drawer input fields from active language dict
+    function populateDrawerFields() {
+      const dict = TRANSLATIONS[currentLang];
+      if (!dict) return;
+
+      if (inputBrandFirst) inputBrandFirst.value = dict.brandScript || '';
+      if (inputBrandLast) inputBrandLast.value = dict.brandSerif || '';
+      if (inputHeroEyebrow) inputHeroEyebrow.value = dict.heroEyebrow || '';
+      if (inputHeroTitle) inputHeroTitle.value = dict.heroTitle || '';
+      if (inputHeroLead) inputHeroLead.value = dict.heroLead || '';
+      if (inputHeroCta1) inputHeroCta1.value = dict.heroCtaPrimary || '';
+      if (inputHeroCta2) inputHeroCta2.value = dict.heroCtaSecondary || '';
+
+      // Stage fields
+      const stNum = stageSelector ? stageSelector.value : '1';
+      syncStageInputs(stNum);
+
+      // Showcase fields
+      if (inputShowcaseHeading) inputShowcaseHeading.value = dict.portfolioHeading || '';
+      if (inputManifesto1) {
+        inputManifesto1.value = Array.isArray(dict.portfolioManifesto)
+          ? dict.portfolioManifesto[0] || ''
+          : dict.portfolioManifesto || '';
+      }
+      if (inputManifesto2) {
+        inputManifesto2.value = Array.isArray(dict.portfolioManifesto)
+          ? dict.portfolioManifesto[1] || ''
+          : '';
+      }
+      if (inputProofText) {
+        inputProofText.value = Array.isArray(dict.portfolioProof)
+          ? dict.portfolioProof.join(' ')
+          : dict.portfolioProof || '';
+      }
+      if (inputShowcaseBtn) inputShowcaseBtn.value = dict.portfolioBtn || '';
+
+      // Brands fields
+      if (inputBrandsTitle) inputBrandsTitle.value = dict.brandsHeading || '';
+      if (inputBrand1Name) inputBrand1Name.value = dict.brand1Name || '';
+      if (inputBrand1Tag) inputBrand1Tag.value = dict.brand1Tag || '';
+      if (inputBrand2Name) inputBrand2Name.value = dict.brand2Name || '';
+      if (inputBrand2Tag) inputBrand2Tag.value = dict.brand2Tag || '';
+      if (inputBrand3Name) inputBrand3Name.value = dict.brand3Name || '';
+      if (inputBrand3Tag) inputBrand3Tag.value = dict.brand3Tag || '';
+
+      // Footer fields
+      if (inputContactTitle) inputContactTitle.value = dict.contactHeading || '';
+      if (inputContactPs) inputContactPs.value = dict.contactPs || '';
+      if (inputBottomCtaTitle) inputBottomCtaTitle.value = dict.bottomCtaTitle || '';
+      if (inputCopyright) inputCopyright.value = dict.copyright || '';
+      const emailEl = document.querySelector('.footer-email');
+      if (inputContactEmail && emailEl) {
+        inputContactEmail.value = emailEl.textContent.trim();
+      }
+    }
+
+    function syncStageInputs(stNum) {
+      const dict = TRANSLATIONS[currentLang];
+      if (!dict) return;
+      if (inputStageStrip) inputStageStrip.value = dict[`strip${stNum}`] || '';
+      if (inputStageTitle) inputStageTitle.value = dict[`s${stNum}Title`] || '';
+      if (inputStageBody) inputStageBody.value = dict[`s${stNum}Body`] || '';
+    }
+
+    function updateDictAndDom(key, val) {
+      TRANSLATIONS[currentLang][key] = val;
+      if (!customState[currentLang]) customState[currentLang] = {};
+      customState[currentLang][key] = val;
+
+      const elements = document.querySelectorAll(`[data-i18n="${key}"]`);
+      elements.forEach((el) => {
+        el.textContent = val;
+      });
+    }
+
+    function exportCleanHtml() {
+      const clone = document.documentElement.cloneNode(true);
+
+      // Clean up dynamic admin classes and open states
+      clone.classList.remove('is-admin-editing');
+      const liveBanner = clone.querySelector('#live-edit-banner');
+      if (liveBanner) liveBanner.style.display = 'none';
+
+      const toast = clone.querySelector('#admin-toast');
+      if (toast) {
+        toast.textContent = '';
+        toast.classList.remove('is-visible');
+      }
+
+      const drawerDialog = clone.querySelector('#admin-customizer-drawer');
+      if (drawerDialog) {
+        drawerDialog.removeAttribute('open');
+      }
+
+      const dock = clone.querySelector('#admin-dock-container');
+      if (dock) {
+        dock.classList.remove('is-expanded');
+      }
+
+      clone.querySelectorAll('[contenteditable]').forEach((el) => {
+        el.removeAttribute('contenteditable');
+        el.removeAttribute('data-editable');
+      });
+
+      const isArticle = window.location.pathname.includes('article');
+      const filename = isArticle ? 'article-published.html' : 'index-published.html';
+
+      const cleanHtml = '<!DOCTYPE html>\n' + clone.outerHTML;
+      const blob = new Blob([cleanHtml], { type: 'text/html;charset=utf-8' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = filename;
+      a.click();
+      URL.revokeObjectURL(url);
+
+      const msg = currentLang === 'fa'
+        ? `✓ فایل استاتیک و نهایی ${filename} با موفقیت دانلود شد.`
+        : `✓ Clean published static HTML (${filename}) downloaded.`;
+      showToast(msg);
+    }
+
+    function exportConfigJson() {
+      const jsonStr = JSON.stringify(customState, null, 2);
+      const blob = new Blob([jsonStr], { type: 'application/json;charset=utf-8' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'site-customization.json';
+      a.click();
+      URL.revokeObjectURL(url);
+      showToast(currentLang === 'fa' ? '✓ فایل پشتیبان تنظیمات (JSON) دریافت شد.' : '✓ Configuration JSON exported.');
+    }
+
+    function importConfigJson(file) {
+      if (!file) return;
+      const reader = new FileReader();
+      reader.onload = (e) => {
+        try {
+          const imported = JSON.parse(e.target.result);
+          if (imported.theme) Object.assign(customState.theme, imported.theme);
+          if (imported.media) Object.assign(customState.media, imported.media);
+          if (imported.fa) {
+            Object.assign(customState.fa, imported.fa);
+            Object.assign(TRANSLATIONS.fa, imported.fa);
+          }
+          if (imported.en) {
+            Object.assign(customState.en, imported.en);
+            Object.assign(TRANSLATIONS.en, imported.en);
+          }
+          saveCustomizations(false);
+          applyTheme(customState.theme);
+          applyMedia(customState.media);
+          applyLanguage(currentLang);
+          populateDrawerFields();
+          showToast(currentLang === 'fa' ? '✓ تنظیمات جدید از فایل با موفقیت اعمال شد.' : '✓ Configuration imported successfully.');
+        } catch (err) {
+          console.error(err);
+          showToast(currentLang === 'fa' ? 'خطا در بارگذاری فایل JSON' : 'Failed to parse JSON file');
+        }
+      };
+      reader.readAsText(file);
+    }
+
+    function factoryReset() {
+      const confirmText = currentLang === 'fa'
+        ? 'آیا از بازنشانی کامل تنظیمات به حالت اولیه و پیش‌فرض قالب اطمینان دارید؟'
+        : 'Are you sure you want to reset all customizations back to factory defaults?';
+      if (!window.confirm(confirmText)) return;
+
+      localStorage.removeItem(STORAGE_KEY);
+      window.location.reload();
+    }
+
+    // Event Listeners setup
+    if (pillBtn) {
+      pillBtn.addEventListener('click', () => {
+        if (dockContainer) dockContainer.classList.add('is-expanded');
+      });
+    }
+
+    if (minimizeBtn) {
+      minimizeBtn.addEventListener('click', () => {
+        if (dockContainer) dockContainer.classList.remove('is-expanded');
+      });
+    }
+
+    if (liveEditBtn) {
+      liveEditBtn.addEventListener('click', () => toggleLiveEdit());
+    }
+
+    if (exitLiveBtn) {
+      exitLiveBtn.addEventListener('click', () => toggleLiveEdit(false));
+    }
+
+    if (openDrawerBtn && drawer) {
+      openDrawerBtn.addEventListener('click', () => {
+        populateDrawerFields();
+        drawer.showModal();
+      });
+    }
+
+    if (closeDrawerBtn && drawer) {
+      closeDrawerBtn.addEventListener('click', () => drawer.close());
+    }
+
+    if (closeDrawerBottomBtn && drawer) {
+      closeDrawerBottomBtn.addEventListener('click', () => drawer.close());
+    }
+
+    if (dockSaveBtn) {
+      dockSaveBtn.addEventListener('click', () => saveCustomizations(true));
+    }
+
+    if (saveDrawerBtn || saveAllBtn) {
+      [saveDrawerBtn, saveAllBtn].forEach((btn) => {
+        if (btn) btn.addEventListener('click', () => saveCustomizations(true));
+      });
+    }
+
+    if (dockExportHtmlBtn || downloadHtmlBtn) {
+      [dockExportHtmlBtn, downloadHtmlBtn].forEach((btn) => {
+        if (btn) btn.addEventListener('click', () => exportCleanHtml());
+      });
+    }
+
+    if (dockResetBtn || factoryResetBtn) {
+      [dockResetBtn, factoryResetBtn].forEach((btn) => {
+        if (btn) btn.addEventListener('click', () => factoryReset());
+      });
+    }
+
+    if (exportJsonBtn) {
+      exportJsonBtn.addEventListener('click', () => exportConfigJson());
+    }
+
+    if (importJsonInput) {
+      importJsonInput.addEventListener('change', (e) => {
+        if (e.target.files && e.target.files[0]) {
+          importConfigJson(e.target.files[0]);
+        }
+      });
+    }
+
+    // Tabs switching in drawer
+    const tabBtns = document.querySelectorAll('.customizer-tab-btn');
+    const tabPanels = document.querySelectorAll('.customizer-tab-panel');
+    tabBtns.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        tabBtns.forEach((b) => {
+          b.classList.remove('is-active');
+          b.setAttribute('aria-selected', 'false');
+        });
+        tabPanels.forEach((p) => p.classList.remove('is-active'));
+
+        btn.classList.add('is-active');
+        btn.setAttribute('aria-selected', 'true');
+        const targetPanelId = btn.getAttribute('aria-controls');
+        const targetPanel = document.getElementById(targetPanelId);
+        if (targetPanel) targetPanel.classList.add('is-active');
+      });
+    });
+
+    // Theme controls
+    if (colorPicker) {
+      colorPicker.addEventListener('input', (e) => {
+        const val = e.target.value;
+        customState.theme.accentColor = val;
+        applyTheme(customState.theme);
+        presetChips.forEach((chip) => {
+          chip.classList.toggle('is-selected', chip.getAttribute('data-color').toLowerCase() === val.toLowerCase());
+        });
+      });
+    }
+
+    presetChips.forEach((chip) => {
+      chip.addEventListener('click', () => {
+        const color = chip.getAttribute('data-color');
+        customState.theme.accentColor = color;
+        applyTheme(customState.theme);
+        presetChips.forEach((c) => c.classList.remove('is-selected'));
+        chip.classList.add('is-selected');
+      });
+    });
+
+    if (themeBgSelect) {
+      themeBgSelect.addEventListener('change', (e) => {
+        customState.theme.bgTone = e.target.value;
+        applyTheme(customState.theme);
+      });
+    }
+
+    if (fontScaleSelect) {
+      fontScaleSelect.addEventListener('change', (e) => {
+        customState.theme.fontScale = e.target.value;
+        applyTheme(customState.theme);
+      });
+    }
+
+    // Hero Image Upload
+    if (inputHeroImgUpload) {
+      inputHeroImgUpload.addEventListener('change', (e) => {
+        const file = e.target.files && e.target.files[0];
+        if (!file) return;
+        const reader = new FileReader();
+        reader.onload = (evt) => {
+          const dataUrl = evt.target.result;
+          customState.media.heroImg = dataUrl;
+          applyMedia(customState.media);
+          if (inputHeroImgUrl) inputHeroImgUrl.value = dataUrl;
+          showToast(currentLang === 'fa' ? '✓ تصویر جدید هیرو اعمال شد.' : '✓ Hero image updated.');
+        };
+        reader.readAsDataURL(file);
+      });
+    }
+
+    if (inputHeroImgUrl) {
+      inputHeroImgUrl.addEventListener('input', (e) => {
+        const url = e.target.value.trim();
+        if (url) {
+          customState.media.heroImg = url;
+          applyMedia(customState.media);
+        }
+      });
+    }
+
+    // Input bindings for Hero & Brand
+    if (inputBrandFirst) {
+      inputBrandFirst.addEventListener('input', (e) => updateDictAndDom('brandScript', e.target.value));
+    }
+    if (inputBrandLast) {
+      inputBrandLast.addEventListener('input', (e) => updateDictAndDom('brandSerif', e.target.value));
+    }
+    if (inputHeroEyebrow) {
+      inputHeroEyebrow.addEventListener('input', (e) => updateDictAndDom('heroEyebrow', e.target.value));
+    }
+    if (inputHeroTitle) {
+      inputHeroTitle.addEventListener('input', (e) => updateDictAndDom('heroTitle', e.target.value));
+    }
+    if (inputHeroLead) {
+      inputHeroLead.addEventListener('input', (e) => updateDictAndDom('heroLead', e.target.value));
+    }
+    if (inputHeroCta1) {
+      inputHeroCta1.addEventListener('input', (e) => updateDictAndDom('heroCtaPrimary', e.target.value));
+    }
+    if (inputHeroCta2) {
+      inputHeroCta2.addEventListener('input', (e) => updateDictAndDom('heroCtaSecondary', e.target.value));
+    }
+
+    // Stages input bindings
+    if (stageSelector) {
+      stageSelector.addEventListener('change', (e) => syncStageInputs(e.target.value));
+    }
+    if (inputStageStrip) {
+      inputStageStrip.addEventListener('input', (e) => {
+        const stNum = stageSelector ? stageSelector.value : '1';
+        updateDictAndDom(`strip${stNum}`, e.target.value);
+      });
+    }
+    if (inputStageTitle) {
+      inputStageTitle.addEventListener('input', (e) => {
+        const stNum = stageSelector ? stageSelector.value : '1';
+        updateDictAndDom(`s${stNum}Title`, e.target.value);
+      });
+    }
+    if (inputStageBody) {
+      inputStageBody.addEventListener('input', (e) => {
+        const stNum = stageSelector ? stageSelector.value : '1';
+        updateDictAndDom(`s${stNum}Body`, e.target.value);
+      });
+    }
+
+    // Showcase input bindings
+    if (inputShowcaseHeading) {
+      inputShowcaseHeading.addEventListener('input', (e) => updateDictAndDom('portfolioHeading', e.target.value));
+    }
+    if (inputManifesto1 || inputManifesto2) {
+      const updateManifesto = () => {
+        const m1 = inputManifesto1 ? inputManifesto1.value : '';
+        const m2 = inputManifesto2 ? inputManifesto2.value : '';
+        const arr = [m1, m2];
+        TRANSLATIONS[currentLang].portfolioManifesto = arr;
+        if (!customState[currentLang]) customState[currentLang] = {};
+        customState[currentLang].portfolioManifesto = arr;
+        const el = document.querySelector('[data-i18n="portfolioManifesto"]');
+        if (el) setMultilineText(el, arr);
+      };
+      if (inputManifesto1) inputManifesto1.addEventListener('input', updateManifesto);
+      if (inputManifesto2) inputManifesto2.addEventListener('input', updateManifesto);
+    }
+    if (inputProofText) {
+      inputProofText.addEventListener('input', (e) => {
+        const val = e.target.value;
+        TRANSLATIONS[currentLang].portfolioProof = val;
+        if (!customState[currentLang]) customState[currentLang] = {};
+        customState[currentLang].portfolioProof = val;
+        const el = document.querySelector('[data-i18n="portfolioProof"]');
+        if (el) el.textContent = val;
+      });
+    }
+    if (inputShowcaseUrl) {
+      inputShowcaseUrl.addEventListener('input', (e) => {
+        const url = e.target.value.trim();
+        const btns = document.querySelectorAll('.portfolio-cta-btn');
+        btns.forEach((b) => { b.href = url; });
+      });
+    }
+    if (inputShowcaseBtn) {
+      inputShowcaseBtn.addEventListener('input', (e) => updateDictAndDom('portfolioBtn', e.target.value));
+    }
+
+    // Brands input bindings
+    if (inputBrandsTitle) {
+      inputBrandsTitle.addEventListener('input', (e) => updateDictAndDom('brandsHeading', e.target.value));
+    }
+    if (inputBrand1Name) {
+      inputBrand1Name.addEventListener('input', (e) => updateDictAndDom('brand1Name', e.target.value));
+    }
+    if (inputBrand1Tag) {
+      inputBrand1Tag.addEventListener('input', (e) => updateDictAndDom('brand1Tag', e.target.value));
+    }
+    if (inputBrand2Name) {
+      inputBrand2Name.addEventListener('input', (e) => updateDictAndDom('brand2Name', e.target.value));
+    }
+    if (inputBrand2Tag) {
+      inputBrand2Tag.addEventListener('input', (e) => updateDictAndDom('brand2Tag', e.target.value));
+    }
+    if (inputBrand3Name) {
+      inputBrand3Name.addEventListener('input', (e) => updateDictAndDom('brand3Name', e.target.value));
+    }
+    if (inputBrand3Tag) {
+      inputBrand3Tag.addEventListener('input', (e) => updateDictAndDom('brand3Tag', e.target.value));
+    }
+
+    // Footer input bindings
+    if (inputContactTitle) {
+      inputContactTitle.addEventListener('input', (e) => updateDictAndDom('contactHeading', e.target.value));
+    }
+    if (inputContactEmail) {
+      inputContactEmail.addEventListener('input', (e) => {
+        const val = e.target.value.trim();
+        document.querySelectorAll('.footer-email').forEach((el) => {
+          el.textContent = val;
+          el.href = `mailto:${val}`;
+        });
+      });
+    }
+    if (inputContactPs) {
+      inputContactPs.addEventListener('input', (e) => updateDictAndDom('contactPs', e.target.value));
+    }
+    if (inputBottomCtaTitle) {
+      inputBottomCtaTitle.addEventListener('input', (e) => updateDictAndDom('bottomCtaTitle', e.target.value));
+    }
+    if (inputCopyright) {
+      inputCopyright.addEventListener('input', (e) => updateDictAndDom('copyright', e.target.value));
+    }
+
+    if (applyDrawerBtn) {
+      applyDrawerBtn.addEventListener('click', () => {
+        showToast(currentLang === 'fa' ? '✓ تغییرات با موفقیت اعمال شدند.' : '✓ Changes applied live.');
+      });
+    }
+
+    // Real-time synchronization while typing directly in the page during Live Edit mode
+    document.addEventListener('input', (e) => {
+      if (!isLiveEditActive) return;
+      const target = e.target;
+      if (!target || !target.hasAttribute('contenteditable')) return;
+      const key = target.getAttribute('data-i18n');
+      if (key) {
+        const text = target.innerText.trim();
+        TRANSLATIONS[currentLang][key] = text;
+        if (!customState[currentLang]) customState[currentLang] = {};
+        customState[currentLang][key] = text;
+      }
+    });
+
+    // Keyboard shortcut: Ctrl + Shift + E or Cmd + Shift + E
+    document.addEventListener('keydown', (e) => {
+      if ((e.ctrlKey || e.metaKey) && e.shiftKey && (e.key === 'E' || e.key === 'e')) {
+        e.preventDefault();
+        if (dockContainer) {
+          dockContainer.classList.toggle('is-expanded');
+        }
+      }
+    });
+
+    // Light-dismiss dialog on outside click
+    if (drawer) {
+      drawer.addEventListener('click', (e) => {
+        const rect = drawer.getBoundingClientRect();
+        const isInDialog = (
+          rect.top <= e.clientY &&
+          e.clientY <= rect.top + rect.height &&
+          rect.left <= e.clientX &&
+          e.clientX <= rect.left + rect.width
+        );
+        if (!isInDialog) {
+          drawer.close();
+        }
+      });
+    }
+
+    // Initial load
+    loadSavedCustomizations();
+  }
+
   document.addEventListener('DOMContentLoaded', () => {
     initLanguage();
     initStageButtons();
@@ -1176,5 +2032,6 @@
     initSeoStudio();
     initTableOfContents();
     initReveal();
+    initAdminCustomizer();
   });
 })();

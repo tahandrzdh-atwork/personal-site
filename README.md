@@ -6,6 +6,20 @@ A single-page, bilingual (**Persian RTL** & **English LTR**) personal portfolio 
 
 - **Editorial High-Contrast Design**: Alternating warm cream (`#FAF3EB`) and ink black (`#070707`) surfaces with coral (`#E4645C`) architectural dividers.
 - **Instant FA / EN Language Switcher**: Toggles `<html lang>` and `dir` (`rtl` ↔ `ltr`) seamlessly across homepage and article pages, saved in `localStorage`.
+- **Admin Visual Customizer & Live Inline Editor Suite**:
+  - **Floating Admin Dock**: Quick-access bottom dock (or toggle with `Ctrl + Shift + E` / `Cmd + Shift + E`) to manage and edit every aspect of the site.
+  - **Live Direct Inline Editing (`contenteditable`)**: Click and type directly on any heading, paragraph, button, stage card, or brand tagline in the live page with visual focus outlines.
+  - **Full Customizer Drawer (`<dialog>`)**: Off-canvas settings panel covering:
+    - 🎨 **Theme & Styling**: Custom primary accent color picker with palette presets (Coral, Crimson, Amber, Emerald, Cobalt, Royal Purple, Slate), background tone switcher (Cream Editorial, Dark Charcoal, Pure White), and font scale multiplier.
+    - 👤 **Hero & Brand Identity**: First/Last name, eyebrow tag, main H1, lead paragraph, CTA buttons, and hero image upload (Base64 file reader or URL).
+    - 🧭 **6 Collaboration Stages**: Real-time editor for all 6 stage titles, strip numbers, and comprehensive body descriptions.
+    - 💼 **Showcase & Manifesto**: Portfolio headings, manifesto statements, proof box copy, button label, and showcase destination link (`https://rabean.agency`).
+    - 🤝 **Partner Brands**: Edit brand names and industry tags across all 6 partner slots.
+    - 📬 **Footer & Contact**: Contact title, displayed email (`info@mmlalezari.ir`), personal P.S. note, social links, and copyright text.
+  - **Persistence & Export**:
+    - Automatic `localStorage` saving (persists across reloads and pages).
+    - **One-click "Download Published HTML"**: Exports clean, self-contained, standalone `.html` with all edits baked in, ready to deploy.
+    - JSON configuration export and import for seamless site backups.
 - **Integrated Article & SEO Studio (`article.html`)**:
   - **Article Title & H1 Hierarchy**: Semantic heading tags with natural query styling.
   - **Answer Nugget / TL;DR**: 40–80 word direct answer blocks optimized for Generative Engine Optimization (**GEO 2026** / ChatGPT / Perplexity / Gemini).
