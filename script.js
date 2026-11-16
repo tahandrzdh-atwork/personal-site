@@ -313,7 +313,67 @@
       btnFactoryReset: '🔄 بازگردانی به تنظیمات کارخانه (Reset Defaults)',
       btnApplyLive: '✓ اعمال زنده',
       btnSaveShort: '💾 ذخیره',
-      btnClose: 'بستن'
+      btnClose: 'بستن',
+
+      /* Digital Products & Single-Domain License Engine */
+      navProducts: 'محصولات و لایسنس',
+      productsHeading: 'محصولات دیجیتال با لایسنس اختصاصی تک‌دامنه‌ای',
+      productsLead: 'بلافاصله پس از ثبت سفارش، کلید لایسنس دیجیتال منحصربه‌فرد برای وب‌سایت شما تولید شده و گواهی فعال‌سازی تک‌دامنه‌ای (Single-Domain License) بر روی صفحه نمایش داده می‌شود.',
+      badgeSingleDomain: '🔒 لایسنس تک‌دامنه‌ای معتبر',
+      p1Title: 'قالب وب‌سایت شخصی و استراتژی برند',
+      p1Desc: 'قالب کامل دوزبانه با طراحی تحریریه‌ای، استودیو سئو، پنل ادمین و سیستم صدور لایسنس.',
+      p1Price: '۱,۴۹۰,۰۰۰',
+      priceToman: 'تومان / تک وب‌سایت',
+      p1F1: 'صدور آنی کلید لایسنس بلافاصله پس از خرید',
+      p1F2: 'قفل اختصاصی روی ۱ دامنه مشخص با گارد ضدکپی',
+      p1F3: 'پنل مدیریت زنده ظاهر و ویرایشگر صفحات',
+      p1F4: 'شامل استودیو بهینه‌سازی مقالات برای رنک‌مث و هوش مصنوعی',
+      btnBuyProduct: 'خرید آنلاین و دریافت آنی لایسنس',
+      p2Title: 'پکیج جامع استودیو سئو و محتوای هوش مصنوعی',
+      p2Desc: 'موتور امتیازدهی زنده سئو (مشابه رنک‌مث)، شبیه‌ساز نتایج گوگل دسکتاپ/موبایل و قالب‌های اسکیما JSON-LD.',
+      p2Price: '۹۸۰,۰۰۰',
+      p2F1: 'صدور آنی کلید لایسنس و فعال‌سازی در ثانیه',
+      p2F2: 'بهینه‌سازی شده برای الگوریتم‌های گوگل و موتورهای هوش مصنوعی',
+      p2F3: 'اسکیمای خودکار Article، FAQ و Breadcrumb',
+      p2F4: 'پشتیبانی و به‌روزرسانی مادام‌العمر روی دامنه ثبت‌شده',
+      p3Title: 'کیت گارد امنیتی و سرور لایسنس (SDK)',
+      p3Desc: 'اسکریپت کامل قفل دامنه‌ای برای قالب‌ها و افزونه‌ها با قابلیت اعتبارسنجی آنلاین و جلوگیری از نصب غیرمجاز.',
+      p3Price: '۱,۸۵۰,۰۰۰',
+      p3F1: 'کد آماده گارد لایسنس برای جاوااسکریپت و PHP',
+      p3F2: 'مکانیزم اعتبارسنجی خودکار کلید با دامنه خریدار',
+      p3F3: 'پنل مدیریت، مشاهده و مسدودسازی لایسنس‌ها',
+      p3F4: 'تولید خودکار گواهی رسمی لایسنس بلافاصله پس از پرداخت',
+      checkoutModalTitle: 'خرید محصول و صدور آنی لایسنس تک‌دامنه‌ای',
+      licenseTypeNotice: 'نوع لایسنس: تک‌دامنه‌ای اختصاصی (Single Domain)',
+      labelBuyerName: 'نام و نام خانوادگی:',
+      labelBuyerEmail: 'آدرس ایمیل (جهت ارسال فاکتور و لایسنس):',
+      labelTargetDomain: 'دامنه وب‌سایتی که محصول روی آن اجرا خواهد شد:',
+      domainLockWarning: '⚠️ توجه به قفل دامنه‌ای: کلید لایسنس منحصراً برای همین دامنه رمزنگاری می‌شود و محصول روی دامنه‌های دیگر قفل خواهد بود.',
+      btnConfirmOrder: '✓ تایید نهایی و صدور آنی لایسنس',
+      licenseSuccessTitle: 'خرید شما با موفقیت ثبت شد و لایسنس صادر گردید!',
+      licenseSuccessSub: 'کلید لایسنس اختصاصی شما در کادر زیر قرار دارد و روی دامنه انتخابی شما قفل شده است:',
+      certCardTitle: 'گواهی رسمی لایسنس تک‌دامنه‌ای',
+      statusActive: '✓ فعال (Active)',
+      labelYourKey: 'کلید لایسنس فعال‌سازی شما:',
+      btnCopyKey: '📋 کپی کلید',
+      metaTargetDomain: 'دامنه مجاز برای اجرا:',
+      metaProductName: 'محصول خریداری‌شده:',
+      metaIssueDate: 'تاریخ صدور:',
+      metaLicenseType: 'محدودیت اجرا:',
+      valSingleOnly: 'فقط ۱ وب‌سایت (تک‌دامنه)',
+      snippetTitle: 'راهنمای سریع فعال‌سازی در محصول:',
+      btnDownloadReceipt: '📥 دانلود شناسنامه لایسنس و پکیج محصول',
+      tabLicenses: '🔑 مدیریت لایسنس‌ها',
+      adminLicensesTitle: 'مدیریت لایسنس‌ها و فروش',
+      adminLicensesDesc: 'تمامی لایسنس‌های صادر شده بلافاصله پس از خرید کاربران در این بخش ثبت می‌شوند و وضعیت دامنه مجاز هر محصول قابل نظارت یا مسدودسازی است.',
+      thCustomer: 'خریدار',
+      thDomain: 'دامنه مجاز',
+      thLicenseKey: 'کلید لایسنس',
+      thStatus: 'وضعیت',
+      thAction: 'عملیات',
+      manualIssueHeading: 'صدور دستی لایسنس برای مشتری خاص:',
+      btnIssueManual: '+ صدور و ثبت لایسنس جدید',
+      btnExportLicenses: '📥 استخراج فهرست لایسنس‌ها (JSON)'
     },
     en: {
       pageTitle: 'Your Name | Bilingual Editorial Personal Template',
@@ -627,7 +687,67 @@
       btnFactoryReset: '🔄 Reset to Factory Defaults',
       btnApplyLive: '✓ Apply Live',
       btnSaveShort: '💾 Save',
-      btnClose: 'Close'
+      btnClose: 'Close',
+
+      /* Digital Products & Single-Domain License Engine */
+      navProducts: 'Products & Licenses',
+      productsHeading: 'Digital Products with Single-Domain License Lock',
+      productsLead: 'Instantly after ordering, a unique cryptographic license key is generated for your domain and displayed on-screen.',
+      badgeSingleDomain: '🔒 Single-Domain Verified',
+      p1Title: 'Editorial Strategy & Portfolio Template',
+      p1Desc: 'Bilingual editorial template with SEO studio, visual customizer, and single-domain license guard.',
+      p1Price: '$49',
+      priceToman: 'USD / Single Domain',
+      p1F1: 'Instant license key generation right after purchase',
+      p1F2: 'Strict single-domain execution lock with anti-bypass guard',
+      p1F3: 'Live visual page editor and admin customizer',
+      p1F4: 'Full Rank Math SEO scorecard & AI engine optimizer',
+      btnBuyProduct: 'Purchase & Instant License',
+      p2Title: 'GEO & SEO Article Studio Pro',
+      p2Desc: 'Real-time Rank Math SEO scoring, live Google SERP simulator, and JSON-LD schema.',
+      p2Price: '$35',
+      p2F1: 'Instant cryptographic key generated in seconds',
+      p2F2: 'Optimized for Google, ChatGPT, Perplexity & Gemini',
+      p2F3: 'Automatic Article, FAQ, and Breadcrumb JSON-LD schema',
+      p2F4: 'Lifetime updates on registered single domain',
+      p3Title: 'Single-Domain License Guard Kit (SDK)',
+      p3Desc: 'Production-ready domain locking SDK for templates, PHP scripts & WordPress plugins.',
+      p3Price: '$69',
+      p3F1: 'Pre-built license guard for JS, PHP & WordPress',
+      p3F2: 'Automated domain validation & callback verification',
+      p3F3: 'Full admin dashboard to monitor and revoke licenses',
+      p3F4: 'Automated certificate issuance upon checkout',
+      checkoutModalTitle: 'Purchase & Instant Single-Domain License',
+      licenseTypeNotice: 'License type: Dedicated Single-Domain Lock',
+      labelBuyerName: 'Full Name:',
+      labelBuyerEmail: 'Email Address:',
+      labelTargetDomain: 'Target Website Domain (where product will run):',
+      domainLockWarning: '⚠️ Single-Domain Notice: Your license key is cryptographically bound to this domain only.',
+      btnConfirmOrder: '✓ Complete Order & Issue Instant License',
+      licenseSuccessTitle: 'Order Successful! Your License Has Been Issued!',
+      licenseSuccessSub: 'Your dedicated license key is ready below, locked to your chosen domain:',
+      certCardTitle: 'Official Single-Domain License Certificate',
+      statusActive: '✓ Active',
+      labelYourKey: 'Your License Key:',
+      btnCopyKey: '📋 Copy Key',
+      metaTargetDomain: 'Authorized Domain:',
+      metaProductName: 'Purchased Product:',
+      metaIssueDate: 'Issue Date:',
+      metaLicenseType: 'Scope:',
+      valSingleOnly: 'Strictly 1 Website (Single Domain)',
+      snippetTitle: 'Quick Product Activation Code:',
+      btnDownloadReceipt: '📥 Download License Certificate & Package',
+      tabLicenses: '🔑 License Manager',
+      adminLicensesTitle: 'License & Sales Management',
+      adminLicensesDesc: 'All licenses issued upon user purchases are tracked here. Domains can be audited or revoked in real-time.',
+      thCustomer: 'Customer',
+      thDomain: 'Authorized Domain',
+      thLicenseKey: 'License Key',
+      thStatus: 'Status',
+      thAction: 'Action',
+      manualIssueHeading: 'Manual License Issuance:',
+      btnIssueManual: '+ Issue & Register New License',
+      btnExportLicenses: '📥 Export Licenses (JSON)'
     }
   };
 
@@ -2025,6 +2145,360 @@
     loadSavedCustomizations();
   }
 
+  /* ======================================================== */
+  /* DIGITAL PRODUCT STORE & INSTANT LICENSE ENGINE           */
+  /* ======================================================== */
+  function initLicenseEngine() {
+    const LICENSE_STORAGE_KEY = 'mml_licenses_db_v1';
+
+    function getStoredLicenses() {
+      try {
+        const raw = localStorage.getItem(LICENSE_STORAGE_KEY);
+        if (raw) return JSON.parse(raw);
+      } catch (e) {
+        console.warn('Error reading licenses:', e);
+      }
+      return [
+        {
+          id: 'lic-demo-1',
+          key: 'MML-STRAT-89F2-C4B1-2026',
+          customerName: 'محمدمهدی لاله‌زاری (دمو)',
+          email: 'info@mmlalezari.ir',
+          domain: 'rabean.agency',
+          productId: 'editorial-template',
+          productName: 'قالب وب‌سایت شخصی و استراتژی برند',
+          issueDate: '۱۴۰۵/۰۸/۲۵',
+          status: 'active'
+        }
+      ];
+    }
+
+    function saveStoredLicenses(licenses) {
+      try {
+        localStorage.setItem(LICENSE_STORAGE_KEY, JSON.stringify(licenses));
+      } catch (e) {
+        console.error('Failed to save licenses:', e);
+      }
+    }
+
+    function cleanDomain(domainStr) {
+      if (!domainStr) return '';
+      return domainStr
+        .trim()
+        .toLowerCase()
+        .replace(/^https?:\/\//i, '')
+        .replace(/^www\./i, '')
+        .split('/')[0]
+        .split(':')[0];
+    }
+
+    function generateLicenseKey(productId, domain) {
+      const prefix = 'MML';
+      const prodCode = (productId || 'PRD').split('-')[0].toUpperCase();
+      const rand1 = Math.random().toString(36).substring(2, 6).toUpperCase();
+      const rand2 = Math.random().toString(36).substring(2, 6).toUpperCase();
+      const year = new Date().getFullYear();
+      return `${prefix}-${prodCode}-${rand1}-${rand2}-${year}`;
+    }
+
+    function createLicense({ customerName, email, domain, productId, productName }) {
+      const licenses = getStoredLicenses();
+      const normalizedDomain = cleanDomain(domain);
+      const key = generateLicenseKey(productId, normalizedDomain);
+      const today = new Date().toLocaleDateString(currentLang === 'fa' ? 'fa-IR' : 'en-US');
+
+      const newRecord = {
+        id: 'lic-' + Date.now(),
+        key: key,
+        customerName: customerName ? customerName.trim() : 'مشتری آنلاین',
+        email: email ? email.trim() : 'client@domain.com',
+        domain: normalizedDomain,
+        productId: productId,
+        productName: productName,
+        issueDate: today,
+        status: 'active'
+      };
+
+      licenses.unshift(newRecord);
+      saveStoredLicenses(licenses);
+      renderAdminLicenses();
+      return newRecord;
+    }
+
+    // Global verification API so sold products can verify themselves:
+    window.verifyProductLicense = function(licenseKey, queryDomain) {
+      const cleanTarget = cleanDomain(queryDomain || window.location.hostname);
+      const licenses = getStoredLicenses();
+      const found = licenses.find((l) => l.key.trim() === (licenseKey || '').trim());
+
+      if (!found) {
+        return {
+          valid: false,
+          status: 'not_found',
+          message: 'کلید لایسنس در سیستم یافت نشد یا نامعتبر است.'
+        };
+      }
+
+      if (found.status === 'revoked') {
+        return {
+          valid: false,
+          status: 'revoked',
+          message: 'این لایسنس توسط مدیر مسدود (Revoked) شده است.'
+        };
+      }
+
+      if (found.domain !== cleanTarget && cleanTarget !== 'localhost' && cleanTarget !== '127.0.0.1') {
+        return {
+          valid: false,
+          status: 'invalid_domain',
+          authorizedDomain: found.domain,
+          queriedDomain: cleanTarget,
+          message: `این لایسنس فقط مجاز به اجرا روی دامنه ${found.domain} است (دامنه فعلی: ${cleanTarget}).`
+        };
+      }
+
+      return {
+        valid: true,
+        status: 'active',
+        product: found.productName,
+        domain: found.domain,
+        message: 'لایسنس تک‌دامنه‌ای معتبر و فعال است.'
+      };
+    };
+
+    // Checkout Dialog Elements
+    const checkoutDialog = document.getElementById('checkout-dialog');
+    const closeCheckoutBtn = document.getElementById('btn-close-checkout');
+    const closeCheckoutDoneBtn = document.getElementById('btn-close-checkout-done');
+    const checkoutFormStep = document.getElementById('checkout-form-step');
+    const checkoutSuccessStep = document.getElementById('checkout-success-step');
+    const checkoutForm = document.getElementById('form-purchase-product');
+    const summaryName = document.getElementById('checkout-summary-name');
+    const summaryPrice = document.getElementById('checkout-summary-price');
+
+    // Success Screen Elements
+    const issuedKeyEl = document.getElementById('issued-license-key');
+    const issuedDomainEl = document.getElementById('issued-license-domain');
+    const issuedProductEl = document.getElementById('issued-license-product');
+    const issuedDateEl = document.getElementById('issued-license-date');
+    const issuedSnippetEl = document.getElementById('issued-license-snippet');
+    const copyKeyBtn = document.getElementById('btn-copy-license');
+    const downloadReceiptBtn = document.getElementById('btn-download-license-file');
+
+    // Admin Table Elements
+    const adminTotalCount = document.getElementById('admin-license-total-count');
+    const adminTbody = document.getElementById('admin-license-tbody');
+    const manualNameInput = document.getElementById('manual-client-name');
+    const manualDomainInput = document.getElementById('manual-client-domain');
+    const manualProductSelect = document.getElementById('manual-client-product');
+    const btnManualIssue = document.getElementById('btn-manual-issue-license');
+    const btnExportLicensesJson = document.getElementById('btn-export-licenses-json');
+
+    let currentSelectedProduct = {
+      id: 'editorial-template',
+      name: 'قالب وب‌سایت شخصی و استراتژی برند',
+      price: '۱,۴۹۰,۰۰۰ تومان'
+    };
+
+    // Open checkout modal when clicking any buy button
+    document.querySelectorAll('.btn-buy-product').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const prodId = btn.getAttribute('data-product-id') || 'editorial-template';
+        const card = btn.closest('.product-card');
+        const prodName = card ? card.querySelector('.product-title').textContent.trim() : 'محصول دیجیتال';
+        const prodPrice = card ? card.querySelector('.product-price-val').textContent.trim() + ' تومان' : '۱,۴۹۰,۰۰۰ تومان';
+
+        currentSelectedProduct = { id: prodId, name: prodName, price: prodPrice };
+
+        if (summaryName) summaryName.textContent = prodName;
+        if (summaryPrice) summaryPrice.textContent = prodPrice;
+
+        if (checkoutFormStep) checkoutFormStep.style.display = 'flex';
+        if (checkoutSuccessStep) checkoutSuccessStep.style.display = 'none';
+
+        if (checkoutDialog) {
+          checkoutDialog.showModal();
+        }
+      });
+    });
+
+    if (closeCheckoutBtn && checkoutDialog) {
+      closeCheckoutBtn.addEventListener('click', () => checkoutDialog.close());
+    }
+
+    if (closeCheckoutDoneBtn && checkoutDialog) {
+      closeCheckoutDoneBtn.addEventListener('click', () => checkoutDialog.close());
+    }
+
+    // Submit purchase form -> Immediately issue and display license!
+    if (checkoutForm) {
+      checkoutForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const buyerName = document.getElementById('input-buyer-name').value;
+        const buyerEmail = document.getElementById('input-buyer-email').value;
+        const targetDomain = document.getElementById('input-buyer-domain').value;
+
+        if (!targetDomain) return;
+
+        const record = createLicense({
+          customerName: buyerName,
+          email: buyerEmail,
+          domain: targetDomain,
+          productId: currentSelectedProduct.id,
+          productName: currentSelectedProduct.name
+        });
+
+        // Populate success view
+        if (issuedKeyEl) issuedKeyEl.textContent = record.key;
+        if (issuedDomainEl) issuedDomainEl.textContent = record.domain;
+        if (issuedProductEl) issuedProductEl.textContent = record.productName;
+        if (issuedDateEl) issuedDateEl.textContent = record.issueDate;
+        if (issuedSnippetEl) {
+          issuedSnippetEl.textContent = `window.PRODUCT_LICENSE = "${record.key}";\n// Authorized Domain: ${record.domain}`;
+        }
+
+        // Switch to success view instantly
+        if (checkoutFormStep) checkoutFormStep.style.display = 'none';
+        if (checkoutSuccessStep) checkoutSuccessStep.style.display = 'flex';
+        checkoutForm.reset();
+      });
+    }
+
+    // Copy License Key
+    if (copyKeyBtn && issuedKeyEl) {
+      copyKeyBtn.addEventListener('click', () => {
+        const key = issuedKeyEl.textContent.trim();
+        navigator.clipboard.writeText(key).then(() => {
+          const originalText = copyKeyBtn.textContent;
+          copyKeyBtn.textContent = currentLang === 'fa' ? '✓ کپی شد!' : '✓ Copied!';
+          setTimeout(() => {
+            copyKeyBtn.textContent = originalText;
+          }, 2000);
+        });
+      });
+    }
+
+    // Download License Certificate & Receipt
+    if (downloadReceiptBtn && issuedKeyEl) {
+      downloadReceiptBtn.addEventListener('click', () => {
+        const key = issuedKeyEl.textContent.trim();
+        const domain = issuedDomainEl ? issuedDomainEl.textContent.trim() : '';
+        const prod = issuedProductEl ? issuedProductEl.textContent.trim() : '';
+        const date = issuedDateEl ? issuedDateEl.textContent.trim() : '';
+
+        const receiptContent = `========================================================\n` +
+          `       OFFICIAL SINGLE-DOMAIN LICENSE CERTIFICATE       \n` +
+          `========================================================\n\n` +
+          `Product:           ${prod}\n` +
+          `License Key:       ${key}\n` +
+          `Authorized Domain: ${domain}\n` +
+          `Issue Date:        ${date}\n` +
+          `Scope:             Strictly 1 Website / Single-Domain Lock\n` +
+          `Status:            Active (Verified)\n\n` +
+          `Integration Snippet:\n` +
+          `window.PRODUCT_LICENSE = "${key}";\n\n` +
+          `========================================================\n` +
+          `Generated automatically by Mohammad Mahdi Lalezari Store\n`;
+
+        const blob = new Blob([receiptContent], { type: 'text/plain;charset=utf-8' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `license-${key}.txt`;
+        a.click();
+        URL.revokeObjectURL(url);
+      });
+    }
+
+    // Admin Panel License Table Renderer
+    function renderAdminLicenses() {
+      const licenses = getStoredLicenses();
+      if (adminTotalCount) adminTotalCount.textContent = licenses.length;
+      if (!adminTbody) return;
+
+      adminTbody.innerHTML = '';
+      licenses.forEach((lic) => {
+        const tr = document.createElement('tr');
+        const isActive = lic.status === 'active';
+
+        tr.innerHTML = `
+          <td>
+            <strong>${lic.customerName || 'مشتری'}</strong>
+            <div style="font-size:0.75rem; color:var(--color-white-muted);">${lic.email || ''}</div>
+          </td>
+          <td><code style="color:var(--color-coral); font-size:0.8rem;">${lic.domain}</code></td>
+          <td><code style="color:#22C55E; font-size:0.8rem;">${lic.key}</code></td>
+          <td>
+            <span class="admin-license-badge ${isActive ? 'is-active' : 'is-revoked'}">
+              ${isActive ? 'فعال' : 'مسدود'}
+            </span>
+          </td>
+          <td>
+            <button type="button" class="btn btn-outline-cream" style="padding:0.25rem 0.6rem; font-size:0.75rem;" data-toggle-id="${lic.id}">
+              ${isActive ? 'مسدودسازی' : 'فعال‌سازی'}
+            </button>
+          </td>
+        `;
+
+        const toggleBtn = tr.querySelector('[data-toggle-id]');
+        if (toggleBtn) {
+          toggleBtn.addEventListener('click', () => {
+            lic.status = lic.status === 'active' ? 'revoked' : 'active';
+            saveStoredLicenses(licenses);
+            renderAdminLicenses();
+          });
+        }
+
+        adminTbody.appendChild(tr);
+      });
+    }
+
+    // Manual Issue by Admin
+    if (btnManualIssue && manualNameInput && manualDomainInput) {
+      btnManualIssue.addEventListener('click', () => {
+        const name = manualNameInput.value.trim();
+        const domain = manualDomainInput.value.trim();
+        const prodSelect = manualProductSelect ? manualProductSelect.value : 'editorial-template';
+        const prodName = manualProductSelect ? manualProductSelect.options[manualProductSelect.selectedIndex].text : 'محصول دستی';
+
+        if (!domain) {
+          alert(currentLang === 'fa' ? 'لطفاً دامنه مجاز را وارد کنید.' : 'Please enter authorized domain.');
+          return;
+        }
+
+        createLicense({
+          customerName: name || (currentLang === 'fa' ? 'مشتری مستقیم' : 'Direct Client'),
+          email: 'direct@client.com',
+          domain: domain,
+          productId: prodSelect,
+          productName: prodName
+        });
+
+        manualNameInput.value = '';
+        manualDomainInput.value = '';
+        alert(currentLang === 'fa' ? '✓ لایسنس جدید با موفقیت صادر و ثبت شد.' : '✓ New license issued successfully.');
+      });
+    }
+
+    // Export Licenses JSON
+    if (btnExportLicensesJson) {
+      btnExportLicensesJson.addEventListener('click', () => {
+        const licenses = getStoredLicenses();
+        const jsonStr = JSON.stringify(licenses, null, 2);
+        const blob = new Blob([jsonStr], { type: 'application/json;charset=utf-8' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = 'licenses-database.json';
+        a.click();
+        URL.revokeObjectURL(url);
+      });
+    }
+
+    // Initial render
+    renderAdminLicenses();
+  }
+
   document.addEventListener('DOMContentLoaded', () => {
     initLanguage();
     initStageButtons();
@@ -2033,5 +2507,6 @@
     initTableOfContents();
     initReveal();
     initAdminCustomizer();
+    initLicenseEngine();
   });
 })();

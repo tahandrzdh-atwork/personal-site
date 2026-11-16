@@ -2524,6 +2524,354 @@
     gap: 0.5rem;
     flex-wrap: wrap;
   }
+
+  /* ======================================================== */
+  /* DIGITAL PRODUCTS & SINGLE-DOMAIN LICENSING SECTION       */
+  /* ======================================================== */
+  .products-section {
+    padding-block: clamp(4rem, 8vw, 6.5rem);
+    border-block-start: 1px solid rgba(7, 7, 7, 0.08);
+  }
+
+  .products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+    gap: clamp(1.5rem, 3vw, 2.5rem);
+    margin-block-start: clamp(2rem, 4vw, 3.5rem);
+  }
+
+  .product-card {
+    background-color: var(--color-ink);
+    color: var(--color-cream);
+    border-radius: var(--radius-sm);
+    padding: clamp(1.75rem, 3vw, 2.5rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    border: 1px solid rgba(250, 243, 235, 0.12);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+  }
+
+  .product-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--color-coral);
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.35);
+  }
+
+  .product-card.is-featured {
+    border: 2px solid var(--color-coral);
+  }
+
+  .product-badge {
+    align-self: flex-start;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    background-color: rgba(228, 100, 92, 0.18);
+    color: var(--color-coral);
+    font-size: 0.78rem;
+    font-weight: 800;
+    padding: 0.35rem 0.75rem;
+    border-radius: var(--radius-pill);
+    border: 1px solid rgba(228, 100, 92, 0.4);
+    margin-block-end: 1.25rem;
+  }
+
+  .product-title {
+    font-family: var(--font-display);
+    font-size: clamp(1.2rem, 2vw, 1.45rem);
+    font-weight: 800;
+    margin-block-end: 0.75rem;
+    color: var(--color-cream);
+    line-height: 1.35;
+  }
+
+  .product-desc {
+    color: var(--color-white-muted);
+    font-size: 0.92rem;
+    line-height: 1.65;
+    margin-block-end: 1.5rem;
+  }
+
+  .product-price-box {
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+    margin-block-end: 1.5rem;
+    border-block-end: 1px solid rgba(250, 243, 235, 0.1);
+    padding-block-end: 1.25rem;
+  }
+
+  .product-price-val {
+    font-size: clamp(1.75rem, 3vw, 2.2rem);
+    font-weight: 800;
+    color: var(--color-coral);
+    font-family: var(--font-body);
+  }
+
+  .product-price-unit {
+    font-size: 0.85rem;
+    color: var(--color-white-muted);
+  }
+
+  .product-features-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .product-feature-item {
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+    font-size: 0.88rem;
+    color: var(--color-cream);
+  }
+
+  .product-feature-icon {
+    inline-size: 1.15rem;
+    block-size: 1.15rem;
+    border-radius: 50%;
+    background-color: rgba(34, 197, 94, 0.2);
+    color: #22C55E;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+    font-weight: 800;
+    flex-shrink: 0;
+  }
+
+  /* Checkout Dialog & License Certificate Modal */
+  dialog.checkout-dialog {
+    position: fixed;
+    inset: 0;
+    margin: auto;
+    inline-size: min(92vw, 580px);
+    max-block-size: 90vh;
+    border: 1px solid rgba(250, 243, 235, 0.2);
+    border-radius: var(--radius-sm);
+    background-color: #121211;
+    color: var(--color-cream);
+    padding: 0;
+    box-shadow: 0 25px 65px rgba(0, 0, 0, 0.75);
+    z-index: 10002;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+  }
+
+  dialog.checkout-dialog:not([open]) {
+    display: none;
+  }
+
+  dialog.checkout-dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    overflow: hidden;
+    overscroll-behavior: contain;
+  }
+
+  .checkout-header {
+    padding: 1.25rem 1.5rem;
+    background-color: #181716;
+    border-block-end: 1px solid rgba(250, 243, 235, 0.12);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .checkout-title {
+    font-size: 1.15rem;
+    font-weight: 800;
+    color: var(--color-coral);
+    margin: 0;
+  }
+
+  .checkout-body {
+    padding: 1.75rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .checkout-product-summary {
+    background-color: rgba(250, 243, 235, 0.05);
+    border: 1px dashed rgba(228, 100, 92, 0.4);
+    border-radius: var(--radius-sm);
+    padding: 1rem 1.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .checkout-domain-hint {
+    background-color: rgba(228, 100, 92, 0.1);
+    border-inline-start: 3px solid var(--color-coral);
+    padding: 0.65rem 0.85rem;
+    border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+    font-size: 0.82rem;
+    color: var(--color-white-muted);
+    line-height: 1.55;
+  }
+
+  /* License Success Presentation Card */
+  .license-success-box {
+    display: none;
+    flex-direction: column;
+    gap: 1.25rem;
+    animation: fadeInScale 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  @keyframes fadeInScale {
+    from { opacity: 0; transform: scale(0.96); }
+    to { opacity: 1; transform: scale(1); }
+  }
+
+  .license-cert-card {
+    background: linear-gradient(145deg, #181716 0%, #0d0c0c 100%);
+    border: 2px solid var(--color-coral);
+    border-radius: var(--radius-sm);
+    padding: 1.5rem;
+    position: relative;
+    box-shadow: 0 15px 35px rgba(228, 100, 92, 0.18);
+  }
+
+  .license-cert-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-block-end: 1px solid rgba(250, 243, 235, 0.12);
+    padding-block-end: 0.75rem;
+    margin-block-end: 1.25rem;
+  }
+
+  .license-cert-title {
+    font-size: 0.95rem;
+    font-weight: 800;
+    color: var(--color-cream);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .license-cert-badge {
+    background-color: rgba(34, 197, 94, 0.2);
+    color: #22C55E;
+    font-size: 0.78rem;
+    font-weight: 700;
+    padding: 0.25rem 0.65rem;
+    border-radius: var(--radius-pill);
+    border: 1px solid rgba(34, 197, 94, 0.4);
+  }
+
+  .license-key-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: #080808;
+    border: 1px solid rgba(228, 100, 92, 0.5);
+    border-radius: var(--radius-sm);
+    padding: 0.75rem 1rem;
+    margin-block: 0.75rem;
+  }
+
+  .license-key-code {
+    font-family: monospace;
+    font-size: 1.05rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    color: #22C55E;
+    flex: 1 1 auto;
+    user-select: all;
+  }
+
+  .btn-copy-license {
+    background-color: var(--color-coral);
+    color: var(--color-ink);
+    border: none;
+    border-radius: var(--radius-sm);
+    padding: 0.45rem 0.85rem;
+    font-size: 0.82rem;
+    font-weight: 700;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: all 0.18s ease;
+  }
+
+  .btn-copy-license:hover {
+    background-color: #FFFFFF;
+    color: #070707;
+  }
+
+  .license-meta-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+    margin-block-start: 1rem;
+    font-size: 0.84rem;
+  }
+
+  .license-meta-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+
+  .license-meta-label {
+    color: var(--color-white-muted);
+    font-size: 0.78rem;
+  }
+
+  .license-meta-value {
+    color: var(--color-cream);
+    font-weight: 700;
+  }
+
+  /* Admin License Manager Table */
+  .admin-license-badge {
+    display: inline-block;
+    padding: 0.2rem 0.55rem;
+    border-radius: var(--radius-pill);
+    font-size: 0.75rem;
+    font-weight: 700;
+  }
+
+  .admin-license-badge.is-active {
+    background-color: rgba(34, 197, 94, 0.2);
+    color: #22C55E;
+  }
+
+  .admin-license-badge.is-revoked {
+    background-color: rgba(239, 68, 68, 0.2);
+    color: #EF4444;
+  }
+
+  .admin-license-table {
+    inline-size: 100%;
+    border-collapse: collapse;
+    font-size: 0.82rem;
+    margin-block-start: 0.75rem;
+  }
+
+  .admin-license-table th,
+  .admin-license-table td {
+    padding: 0.65rem 0.75rem;
+    border-block-end: 1px solid rgba(250, 243, 235, 0.1);
+    text-align: start;
+  }
+
+  .admin-license-table th {
+    color: var(--color-coral);
+    font-weight: 700;
+    background-color: rgba(250, 243, 235, 0.04);
+  }
 }
 
 @layer utilities {

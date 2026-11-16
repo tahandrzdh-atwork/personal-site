@@ -29,6 +29,12 @@ A single-page, bilingual (**Persian RTL** & **English LTR**) personal portfolio 
   - **Live Rank Math-style SEO Scorecard (0–100)**: Real-time checks for focus keyword in title, meta description length (130–158 chars), title length (<60 chars), lead density, tables, links, and schema.
   - **Structured Data / Schema.org**: Ready-to-index JSON-LD for `Article`, `BreadcrumbList`, and `FAQPage`.
   - **Import / Export**: Upload articles via JSON or export clean SEO JSON and self-contained HTML.
+- **Digital Product Store & Instant Single-Domain License Engine**:
+  - **Single-Domain License Protection**: Each digital product is locked cryptographically to a single authorized domain name (`example.ir`).
+  - **Instant License Key Generation**: Zero-delay purchase flow that renders the **Official License Certificate Card** immediately on-screen without requiring external gateway round-trips.
+  - **Certificate Modal Features**: One-click key copy, integration snippet preview, domain lock confirmation, and downloadable license receipt package (`.txt`/JSON).
+  - **Client Verification Engine**: Universal `window.verifyProductLicense(key, domain)` API for embedding directly into digital products to prevent unauthorized domain usage.
+  - **Admin License Manager Tab**: Integrated directly inside the Admin Drawer (`#tab-licenses`) to monitor active licenses, toggle revoke/active status, manually issue client licenses, and export all sales records as JSON.
 - **Interactive Stage-to-Form Flow**: Smooth scroll and automatic stage pre-selection in contact form with inline accessible validation.
 - **Ready for GitHub Pages**: 100% static files.
 

@@ -138,7 +138,8 @@
           <li><a href="index.html#top" class="nav-link" data-i18n="navHome">خانه</a></li>
           <li><a href="index.html#stages" class="nav-link" data-i18n="navStages">مراحل</a></li>
           <li><a href="index.html#portfolio" class="nav-link" data-i18n="navWork">نمونه‌کارها</a></li>
-          <li><a href="index.html#articles" class="nav-link is-active" data-i18n="navArticles">مقالات</a></li>
+          <li><a href="index.html#products" class="nav-link" data-i18n="navProducts">محصولات و لایسنس</a></li>
+          <li><a href="article.html" class="nav-link is-active" data-i18n="navArticles">مقالات</a></li>
           <li><a href="index.html#contact" class="nav-link" data-i18n="navContact">تماس</a></li>
         </ul>
 
@@ -632,6 +633,7 @@
           <li><a href="index.html#top" class="footer-link" data-i18n="navHome">خانه</a></li>
           <li><a href="index.html#stages" class="footer-link" data-i18n="navStages">مراحل</a></li>
           <li><a href="index.html#portfolio" class="footer-link" data-i18n="navWork">نمونه‌کارها</a></li>
+          <li><a href="index.html#products" class="footer-link" data-i18n="navProducts">محصولات و لایسنس</a></li>
           <li><a href="article.html" class="footer-link is-active" data-i18n="navArticles">مقالات</a></li>
           <li><a href="index.html#contact" class="footer-link" data-i18n="navContact">تماس</a></li>
         </ul>
@@ -722,6 +724,7 @@
       <button type="button" role="tab" class="customizer-tab-btn" id="tab-showcase" aria-selected="false" aria-controls="panel-showcase" data-i18n="tabShowcase">💼 نمونه‌کار و رابین</button>
       <button type="button" role="tab" class="customizer-tab-btn" id="tab-brands" aria-selected="false" aria-controls="panel-brands" data-i18n="tabBrands">🤝 برندها</button>
       <button type="button" role="tab" class="customizer-tab-btn" id="tab-footer" aria-selected="false" aria-controls="panel-footer" data-i18n="tabFooter">📬 فوتر و تماس</button>
+      <button type="button" role="tab" class="customizer-tab-btn" id="tab-licenses" aria-selected="false" aria-controls="panel-licenses" data-i18n="tabLicenses">🔑 مدیریت لایسنس‌ها</button>
       <button type="button" role="tab" class="customizer-tab-btn" id="tab-data" aria-selected="false" aria-controls="panel-data" data-i18n="tabData">💾 خروجی و فایل</button>
     </nav>
 
@@ -967,6 +970,62 @@
             </label>
             <button type="button" class="btn btn-outline-ink" id="btn-admin-factory-reset" style="border-color: #ef4444; color: #f87171;" data-i18n="btnFactoryReset">
               🔄 بازگردانی به تنظیمات کارخانه (Reset Defaults)
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- 8. Licenses Panel -->
+      <div role="tabpanel" id="panel-licenses" class="customizer-tab-panel" aria-labelledby="tab-licenses">
+        <div class="customizer-section-card">
+          <div style="display: flex; justify-content: space-between; align-items: center; border-block-end: 1px solid rgba(250, 243, 235, 0.08); padding-block-end: 0.5rem;">
+            <h3 class="customizer-section-title" style="margin: 0;" data-i18n="adminLicensesTitle">مدیریت لایسنس‌ها و فروش</h3>
+            <span style="font-size: 0.82rem; color: var(--color-coral); font-weight: 700;">
+              تعداد لایسنس‌های صادرشده: <strong id="admin-license-total-count">0</strong>
+            </span>
+          </div>
+
+          <p style="font-size: 0.84rem; color: var(--color-white-muted); line-height: 1.6;" data-i18n="adminLicensesDesc">
+            تمامی لایسنس‌های صادر شده بلافاصله پس از خرید کاربران در این بخش ثبت می‌شوند و وضعیت دامنه مجاز هر محصول قابل نظارت یا مسدودسازی است.
+          </p>
+
+          <!-- License list container -->
+          <div style="overflow-x: auto; max-block-size: 260px; scrollbar-width: thin;">
+            <table class="admin-license-table">
+              <thead>
+                <tr>
+                  <th data-i18n="thCustomer">خریدار</th>
+                  <th data-i18n="thDomain">دامنه مجاز</th>
+                  <th data-i18n="thLicenseKey">کلید لایسنس</th>
+                  <th data-i18n="thStatus">وضعیت</th>
+                  <th data-i18n="thAction">عملیات</th>
+                </tr>
+              </thead>
+              <tbody id="admin-license-tbody">
+                <!-- Dynamically populated -->
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Manual License Issuance Form -->
+          <div style="border-block-start: 1px solid rgba(250, 243, 235, 0.1); padding-block-start: 1rem; display: flex; flex-direction: column; gap: 0.75rem;">
+            <h4 style="font-size: 0.9rem; font-weight: 700; color: var(--color-coral); margin: 0;" data-i18n="manualIssueHeading">صدور دستی لایسنس برای مشتری خاص:</h4>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 0.5rem;">
+              <input type="text" id="manual-client-name" class="customizer-input" placeholder="نام مشتری">
+              <input type="text" id="manual-client-domain" class="customizer-input" placeholder="دامنه مجاز (مثال: client.ir)">
+              <select id="manual-client-product" class="customizer-select">
+                <option value="editorial-template">قالب استراتژی شخصی</option>
+                <option value="seo-studio-pro">پکیج استودیو سئو</option>
+                <option value="license-guard-sdk">کیت گارد لایسنس</option>
+              </select>
+            </div>
+            <button type="button" class="btn btn-outline-cream" id="btn-manual-issue-license" data-i18n="btnIssueManual">
+              + صدور و ثبت لایسنس جدید
+            </button>
+          </div>
+
+          <div style="display: flex; gap: 0.5rem; margin-block-start: 0.5rem;">
+            <button type="button" class="btn btn-outline-cream" id="btn-export-licenses-json" style="flex: 1;" data-i18n="btnExportLicenses">
+              📥 استخراج فهرست لایسنس‌ها (JSON)
             </button>
           </div>
         </div>
